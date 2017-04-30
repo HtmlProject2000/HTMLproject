@@ -52,39 +52,39 @@
                         </div>
                     </div>
                     <div id="second-line">
-                    <div id="conteiner-nav-in-center">
-                        <nav id="nav-variant" role="">
-                            <ul>
-                                <il>
-                                    <a href="home-page.html">Home</a>
-                                </il>
-                                <il>
-                                    <a href="custon-search-page.html">Busca Personalizada</a>
-                                </il>
-                                <il>
-                                    <a href="see-some-sights.html">Visite</a>
-                                </il>
-                                <il>
-                                    Meus Eventos
-                                    <ul><!--DROPDOWN-->
-                                        <il>
-                                            <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
-                                            <a href="new-event.html">Novo Evento</a>
-                                        </il>
-                                        <il>
-                                            <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                            <a href="favorite-events.html">Favoritos</a>
-                                        </il>
-                                        <il>
-                                            <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
-                                            <a href="my-events-list.html">Minha Lista de Eventos</a>
-                                        </il>
-                                    </ul>
-                                </il>
-                            </ul>
-                        </nav>
+                        <div id="conteiner-nav-in-center">
+                            <nav id="nav-variant" role="">
+                                <ul>
+                                    <il>
+                                        <a href="home-page.html">Home</a>
+                                    </il>
+                                    <il>
+                                        <a href="custon-search-page.html">Busca Personalizada</a>
+                                    </il>
+                                    <il>
+                                        <a href="see-some-sights.html">Visite</a>
+                                    </il>
+                                    <il>
+                                        Meus Eventos
+                                        <ul><!--DROPDOWN-->
+                                            <il>
+                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                                <a href="new-event.html">Novo Evento</a>
+                                            </il>
+                                            <il>
+                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                                <a href="favorite-events.html">Favoritos</a>
+                                            </il>
+                                            <il>
+                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
+                                            </il>
+                                        </ul>
+                                    </il>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
-                </div>
                 </div>
             </header>
         </div>
@@ -92,49 +92,83 @@
             Opções
             <nav class="nav-options">
                 Ordens
-                <ul>
-                    <il>
-                        <label for="btn-alphabetical-order">afabética</label>
-                        <input type="button" id="btn-alphabetical-order" value="A-Z"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "Z-A" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
+                <ul class="nav-ul-options">
+                    <il class="nav-ul-il-options">
+                        <label for="btn-alphabetical-order">Afabética</label>
+                        <input type="button" id="btn-alphabetical-order" value="↑ or ↓"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "↑" ou "↓" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
                     </il>
-                    <il>
-                        <label for="btn-chrnological-order">cronológica</label>
-                        <input type="button" id="btn-chrnological-order" value="1-9"><!--MUDAR PARA "9-1"-->
+                    <il class="nav-ul-il-options">
+                        <label for="btn-chrnological-order">Cronológica</label>
+                        <input type="button" id="btn-chrnological-order" value="↑ or ↓"><!--MUDAR PARA "9-1"-->
                     </il>
-                    <il>
+                    <il class="nav-ul-il-options">
+                        <label for="tbn-increscent-decrescent-order"></label>
+                    </il>
+                    <il class="nav-ul-il-options">
                         <label for="checkbox-my-events">Meus eventos</label>
                         <input type="checkbox" id="checkbox-my-events" value="Meus">
-                    </il>
-                    <il>
-                        <label
                     </il>
                 </ul>
             </nav>
         </div>
-            <form method="get" class="form-custon-search">
-                <div class="title-form">
-                    <h1>Busca Personalizada</h1>
-                </div>
-                <fieldset>
+        <form method="get" class="form-custon-search">
+            <h1>Busca Personalizada</h1>
+            <ul>
+                <il>
+                    <label for="txt-name">Nome:</label>
+                    <input type="text" name="txt-name" id="txt-name"/>
+                </il>
+                <il>
+                    <label for="date-initial">Data:</label>
+                    <input type="date" name="date-initial" id="date-initial"/>
+                    <label for="date-limit">a</label>
+                    <input type="date" name="date-initial" id="date-initial"/>
+                </il>
+                <il>
+                    <label for="select-category">Categoria:</label>
+                    <select id="select-category">
+                        <option value="escolher">A definir</option>
+                    </select>
+                </il>
+                <il>
+                    <input type="button" id="tbn-custon-search-go" name="tbn-custon-search-go" value="→ Buscar">
+                </il>
+                <il>
+                    <input type="button" id="btn-see-advanced-search" name="btn-see-advanced-search" value="busca avançada"><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
                     <ul>
                         <il>
-                            <label for="txt-name">Nome:</label>
-                            <input type="text" name="txt-name" id="txt-name"/>
-                        </il>
-                        <il>
-                            <label for="date-initial">Data:</label>
-                            <input type="date" name="date-initial" id="date-initial"/>
-                            <label for="date-limit">a</label>
-                            <input type="date" name="date-initial" id="date-initial"/>
-                        </il>
-                        <il>
-                            <label for="select-category">Categoria:</label>
-                            <select id="select-category">
-                                <option value="escolher">A definir</option>
-                            </select>
+                            <h2>Busca Avançada</h2>
+                            <ul>
+                                <il>
+                                    Local
+                                    <ul>
+<!--
+                                        <il>
+                                            <label for="select-advanced-search-estado">Estado</label>
+                                            <select id="select-advanced-search">
+                                                <option value="none">Vazio</option>
+                                            </select>
+                                        </il>
+                                        <li>
+                                            <label for="select-advanced-search-cidade">Cidade</label>
+                                            <select id="select-advanced-search-cidade">
+                                                <option value="none">Vazio</option>
+                                            </select>
+                                        </li>
+-->
+                                        <li>
+                                            <label for="select-advanced-search-bairro">Bairro</label>
+                                            <select id="select-advanced-search-bairro">
+                                                <option value="none">vazio</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </il>
+                            </ul>
                         </il>
                     </ul>
-                </fieldset>
-            </form>
+                </il>
+            </ul>
+        </form>
     </body>
 </html>
