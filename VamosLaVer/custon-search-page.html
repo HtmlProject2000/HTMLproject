@@ -43,8 +43,9 @@
                             <button  id="btn-search">Buscar</button>
                         </div>
                         <div class="login-or-sing-in-box">
-                            <button id="btn-login-or-sing-in" >Login</button>
-                            <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                            <a href="login-or-sing-in-page.html">
+                                <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                            </a>
                         </div>
                     </div>
                     <div id="second-line">
@@ -84,5 +85,50 @@
                 </div>
             </header>
         </div>
+        <div class="conteiner-options">
+            Opções
+            <nav class="nav-options">
+                Ordens
+                <ul>
+                    <il>
+                        <label for="btn-alphabetical-order">afabética</label>
+                        <input type="button" id="btn-alphabetical-order" value="A-Z"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "Z-A" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
+                    </il>
+                    <il>
+                        <label for="btn-chrnological-order">cronológica</label>
+                        <input type="button" id="btn-chrnological-order" value="1-9"><!--MUDAR PARA "9-1"-->
+                    </il>
+                    <il>
+                        <label for="checkbox-my-events">Meus eventos</label>
+                        <input type="checkbox" id="checkbox-my-events" value="Meus">
+                    </il>
+                </ul>
+            </nav>
+        </div>
+            <form method="get" class="form-custon-search">
+                <div class="title-form">
+                    <h1>Busca Personalizada</h1>
+                </div>
+                <fieldset>
+                    <ul>
+                        <il>
+                            <label for="txt-name">Nome:</label>
+                            <input type="text" name="txt-name" id="txt-name"/>
+                        </il>
+                        <il>
+                            <label for="date-initial">Data:</label>
+                            <input type="date" name="date-initial" id="date-initial"/>
+                            <label for="date-limit">a</label>
+                            <input type="date" name="date-initial" id="date-initial"/>
+                        </il>
+                        <il>
+                            <label for="select-category">Categoria:</label>
+                            <select id="select-category">
+                                <option value="escolher">A definir</option>
+                            </select>
+                        </il>
+                    </ul>
+                </fieldset>
+            </form>
     </body>
 </html>
