@@ -5,5 +5,131 @@
         <title></title>
     </head>
     <body>
+        <div class="conteiner-top">
+            <header>
+                <div class="conteiner-navigation">
+                    <div class="first-line-navigation">
+                        <div class="conteiner-right-top">
+                            <nav class="right-top-menu" role="navigation">
+                                <ul>
+                                    <li>
+                                        MENU
+                                        <ul><!--DropDown-->
+                                            <li>
+                                                <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>
+                                            </li>
+                                            <li>
+                                                <a href="rate-this-site.html">Avalie este site</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact-us.html">Entre em contato</a>
+                                            </li>
+                                            <li>
+                                                <a href="about-us.html">Apresentação do site</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
+                            <button  id="btn-search">
+                                <a href="search-result.html">
+                                    <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
+                                </a>
+                            </button>
+                        </div>
+                        <div class="login-or-sing-in-box">
+                            <a href="login-or-sing-in-page.html">
+                                <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="second-line">
+                        <div id="conteiner-nav-in-center">
+                            <nav id="nav-variant" role="">
+                                <ul>
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="custon-search-page.html">Busca Personalizada</a>
+                                    </li>
+                                    <li>
+                                        <a href="see-some-sights.html">Visite</a>
+                                    </li>
+                                    <li>
+                                        Meus Eventos
+                                        <ul><!--DROPDOWN-->
+                                            <li>
+                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                                <a href="new-event.html">Novo Evento</a>
+                                            </li>
+                                            <li>
+                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                                <a href="favorite-events.html">Favoritos</a>
+                                            </li>
+                                            <li>
+                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="conteiner-options">
+            Opções de exibição
+            <nav class="nav-options">
+                <ul class="nav-ul-options">
+                    <li class="nav-ul-li-options">
+                        <label for="btn-alphabetical-order">Ordem Afabética</label>
+                        <input type="button" id="btn-alphabetical-order" value="↑ or ↓"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "↑" ou "↓" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
+                    </li>
+                    <li class="nav-ul-li-options">
+                        <label for="btn-chrnological-order">Ordem Cronológica</label>
+                        <input type="button" id="btn-chrnological-order" value="↑ or ↓"><!--MUDAR PARA "9-1"-->
+                    </li>
+                    <li class="nav-ul-li-options">
+                        <label for="tbn-increscent-decrescent-order">Ordem de Qtd. previta de Visitantes</label>
+                        <input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓">
+                    </li>
+                    <li class="nav-ul-li-options">
+                        <label for="checkbox-my-events">Meus eventos</label>
+                        <input type="checkbox" id="checkbox-my-events" value="Meus">
+                    </li>
+                </ul>
+            </nav>
+            
+</div>
+        <div class="title-page">
+            <h1>Lista pessoal de eventos</h1>
+        </div>
+        <div class="conteiner-result-panel">
+            <div class="box"><!--SABEMOS QUE OS BOXES SERÃO IMPLEMENTADOS EM JS JÁ QUE UTILIZARÃO O BANCO DE DADOS-->
+                <div class="box-informations">
+                    <pre>
+                        NOME:____________
+                        DATA:__/__/____
+                        CATEGORIA:_______
+                    </pre>
+                </div>
+                <div class="box-description">
+                    <pre>
+                        DESCRIÇÃO:____________
+                        ______________________
+                        ______________________
+                    </pre>
+                </div>
+                <div class="box-favorite">
+                    <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
