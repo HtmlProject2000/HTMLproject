@@ -1,0 +1,168 @@
+/*configuração vagabunda do menu de navegação (por sendo usada só na home page)*/
+
+
+
+.first-line-navigation{
+    position:fixed;
+    width:100%;
+    top:0px;
+    left:0px;
+    
+    
+    
+}
+
+.login-or-sign-in-box img{
+    position:absolute;
+    top:20px;
+    right:25px;
+}
+
+
+
+.right-top-menu{
+    display:block;
+    background: linear-gradient(dodgerblue, #1212AA);
+    padding: 10px 10px 10px;
+    position:relative;
+    top:0px;
+    opacity:1;
+    height: 50px;
+
+}
+
+.right-top-menu li{
+    display:inline-block;
+}
+#ul1{
+    list-style: none;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+
+
+
+
+
+/*DROPIDOUN*/
+.dropbtn {
+    background: linear-gradient(dodgerblue, #1212AA);
+    padding: 16px;
+    font-size: 15px;
+    color:white;
+    border: none;
+    cursor: pointer;
+    top:0px;
+    height: 50px;
+    
+    
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropDown:hover .dropdown-content {
+    display: block;
+}
+
+.dropDown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*FIM DO DROPIDOUM*/
+
+/*DROPIDOUM 2*/
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #F9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #f1f1f1}
+
+.dropDown:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropDown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*FIM DO DROPIDOUM 2*/
+
+.search-box {
+    position:absolute;
+    right:90px;
+    top:10px;
+    width:225px;
+}
+
+#second-menu{
+    position: fixed;
+    width: 500px;
+    top:8px;
+    right: 350px;   
+    
+    
+    
+}
+
+#nav-variant a{    
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+#nav-variant li{
+    display: inline;    
+    text-decoration: none;
+    
+    
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
