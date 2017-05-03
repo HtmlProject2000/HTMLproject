@@ -1,12 +1,21 @@
 /*configuração vagabunda do mneu de navegação (por sendo usada só na home page)*/
 
+
+.palavrasJogadasAoVento{
+    padding-top: 90px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 .first-line-navigation{
     position:fixed;
     width:100%;
     top:0px;
     left:0px;
     opacity:1;
-       
+    
+    
+    
 }
 
 .login-or-sign-in-box img{
@@ -37,7 +46,6 @@
     top:0px;
     right:0px;
 }
-
 
 /*DROPIDOUN*/
 .dropbtn {
@@ -139,6 +147,8 @@
     top:8px;
     right: 350px;   
     
+    
+    
 }
 
 #nav-variant a{    
@@ -149,5 +159,7 @@
 
 #nav-variant li{
     display: inline;    
-    text-decoration: none;   
+    text-decoration: none;
+    
+    
 }
