@@ -5,5 +5,139 @@
         <title></title>
     </head>
     <body>
+        <div class="conteiner-top">
+            <header>
+                <div class="conteiner-top"><!--LOGO SEM IMAGEM-->
+                    <div class="top-logo">
+                        VamosLáVer
+                    </div>
+                </div>
+                <div class="conteiner-navigation">
+                    <div class="first-line-navigation">
+                        <div class="conteiner-right-top">
+                            <nav class="right-top-menu" role="navigation">
+                                <ul>
+                                    <li>
+                                        MENU
+                                        <ul><!--DropDown-->
+                                            <li>
+                                                <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>
+                                            </li>
+                                            <li>
+                                                <a href="rate-this-site.html">Avalie este site</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact-us.html">Entre em contato</a>
+                                            </li>
+                                            <li>
+                                                <a href="about-us.html">Apresentação do site</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
+                            <button  id="btn-search">
+                                <a href="search-result.html">
+                                    <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
+                                </a>
+                            </button>
+                        </div>
+                        <div class="login-or-sing-in-box">
+                            <a href="login-or-sing-in-page.html">
+                                <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="second-line">
+                        <div id="conteiner-nav-in-center">
+                            <nav id="nav-variant" role="">
+                                <ul>
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="custon-search-page.html">Busca Personalizada</a>
+                                    </li>
+                                    <li>
+                                        <a href="see-some-sights.html">Visite</a>
+                                    </li>
+                                    <li>
+                                        Meus Eventos
+                                        <ul><!--DROPDOWN-->
+                                            <li>
+                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                                <a href="new-event.html">Novo Evento</a>
+                                            </li>
+                                            <li>
+                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                                <a href="favorite-events.html">Favoritos</a>
+                                            </li>
+                                            <li>
+                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <form method="get" class="form-add-new-event">
+            <h1>Busca Personalizada</h1>
+            <ul>
+                <li>
+                    <label for="txt-name">Nome:</label>
+                    <input type="text" name="txt-name" id="txt-name"/>
+                </li>
+                <li>
+                    <label for="date-initial">Data:</label>
+                    <input type="date" name="date-initial" id="date-initial"/>
+                    <label for="date-limit">a</label>
+                    <input type="date" name="date-initial" id="date-initial"/>
+                </li>
+                <li>
+                    <label for="select-category">Categoria:</label>
+                    <select id="select-category">
+                        <option value="escolher">A definir</option>
+                    </select>
+                </li>
+<!--
+                <li>
+                    <label for="select-add-new-event">Estado</label>
+                    <select id="select-add-new-event">
+                        <option value="none">Vazio</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="select-add-new-event">Cidade</label>
+                    <select id="select-add-new-event">
+                        <option value="none">Vazio</option>
+                    </select>
+                </li>
+-->
+                <li>
+                    <label for="select-add-new-event">Bairro</label>
+                    <select id="select-add-new-event">
+                        <option value="none">vazio</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="textarea-descrition-add-new-event">Descrição</label>
+                    <textarea id="textarea-add-new-event" rows="4" cols="50" placeholder="Digite sua descrição do evento aquí!!" ></textarea>
+                </li>
+                <li>
+                    <button id="tbn-add-new-event">
+                        <img src="_imagens/arrow-right-black.png" height="15px" width="15px">Concluído
+                    </button>
+                    <input type="reset" id="btn-add-new-event" value="limpar">
+                </li>
+            </ul>
+        </form>
     </body>
 </html>
