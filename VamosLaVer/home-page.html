@@ -3,39 +3,31 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>Página inicial</title>
-        <link>
+        <script type="text/javascript" src="_Javascript/scripto.js"></script>        
+        <link rel = "stylesheet" href = "_css/style-pages.css">
     </head>
     <body>
         <div class="conteiner-top">
             <header>
-                <div class="conteiner-top"><!--LOGO SEM IMAGEM-->
+                 <!--<div class="conteiner-top">
                     <div class="top-logo">
                         VamosLáVer
                     </div>
-                </div>
+                </div>-->
+
                 <div class="conteiner-navigation">
                     <div class="first-line-navigation">
                         <div class="conteiner-right-top">
                             <nav class="right-top-menu" role="navigation">
-                                <ul>
-                                    <li>
-                                        MENU
-                                        <ul><!--DropDown-->
-                                            <li>
-                                                <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>
-                                            </li>
-                                            <li>
-                                                <a href="rate-this-site.html">Avalie este site</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Entre em contato</a>
-                                            </li>
-                                            <li>
-                                                <a href="about-us.html">Apresentação do site</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div class = "dropDown">                                  
+                                   <button class = "dropbtn">MENU</button>                                            
+                                   <div class ="dropdown-content">                                     
+                                   <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>        
+                                   <a href="rate-this-site.html">Avalie este site</a>
+                                   <a href="contact-us.html">Entre em contato</a>        
+                                   <a href="presentation.html">Apresentação do site</a>
+                                   </div>
+                                </div>            
                             </nav>
                         </div>
                         <div class="search-box">
@@ -46,16 +38,15 @@
                                 </a>
                             </button>
                         </div>
-                        <div class="login-or-sing-in-box">
+                        <div class="login-or-sign-in-box">
                             <a href="login-or-sing-in-page.html">
                                 <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
                             </a>
                         </div>
-                    </div>
-                    <div id="second-line">
+                        <div id="second-menu">
                         <div id="conteiner-nav-in-center">
                             <nav id="nav-variant" role="">
-                                <ul>
+                                
                                     <li>
                                         <a href="home-page.html">Home</a>
                                     </li>
@@ -65,39 +56,42 @@
                                     <li>
                                         <a href="see-some-sights.html">Visite</a>
                                     </li>
-                                    <li>
-                                        Meus Eventos
-                                        <ul><!--DROPDOWN-->
-                                            <li>
+                                    
+                                
+                                <div class = "dropDown">
+                                           <button class = "dropbtn">Meus Eventos</button>   
+                                   <!--DROPDOWN-->
+                                          <div class = "dropdown-content2">  
+                                              
+                                              
                                                 <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
                                                 <a href="new-event.html">Novo Evento</a>
-                                            </li>
-                                            <li>
                                                 <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
                                                 <a href="favorite-events.html">Favoritos</a>
-                                            </li>
-                                            <li>
                                                 <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
                                                 <a href="my-events-list.html">Minha Lista de Eventos</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                              
+                                              
+                                            </div>
+                                    </div>
                             </nav>
                         </div>
                     </div>
+                    </div>    
                 </div>
             </header>
         </div>
-        <div class="title-page">
-            <hgroup>
+        <div align="center" class="palavrasJogadasAoVento">
                 <h1>Veja os eventos perto de você</h1>
-                <h2>MAPA</h2>
-            </hgroup>
+                <h2>MAPA</h2>                
+        
+        
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31875.12809002846!2d-59.98733371081893!3d-2.988839477026099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1493845644444" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h6>RESOLVIDO PELO ANDRÉ</h6>
         </div>
-        <div id="conteiner-map" class="conteiner-map">
-            <h6>A RESOLVER COM ANDRÉ</h6>
-        </div>
+            
+       
         <div class="conteiner-ranking">
             <h2>Ranking</h2>
             <div clas="conteiner-ranking-boxes">
@@ -106,18 +100,18 @@
                         <!-- A POSIÇÃO DO BOX -->
                     </div>
                     <div class="box-informations">
-                        <pre>
+                        <!--
                             NOME:____________
                             DATA:__/__/____
                             CATEGORIA:_______
-                        </pre>
+                        -->
                     </div>
                     <div class="box-description">
-                        <pre>
+                        <!--
                             DESCRIÇÃO:____________
                             ______________________
                             ______________________
-                        </pre>
+                        -->
                     </div>
                     <div class="box-favorite">
                         <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
