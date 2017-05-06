@@ -6,7 +6,7 @@
         <script type="text/javascript" src="_Javascript/scripto.js"></script>        
         <link rel = "stylesheet" href = "_css/style-pages.css">
     </head>
-    <body>
+    <body  >
         <div class="conteiner-top">
             <header>
                  <!--<div class="conteiner-top">
@@ -20,6 +20,7 @@
                         <div class="conteiner-right-top">
                             <nav class="right-top-menu" role="navigation">
                                 <div class = "dropDown">                                  
+<<<<<<< HEAD
                                    <button class = "dropbtn">MENU</button>                                            
                                    <div class ="dropdown-content">                                     
                                    <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>        
@@ -28,6 +29,9 @@
                                    <a href="presentation.html">Apresentação do site</a>
                                    </div>
                                 </div>            
+=======
+                                      </div>
+>>>>>>> origin/master
                             </nav>
                         </div>
                         <div class="search-box">
@@ -43,9 +47,10 @@
                                 <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
                             </a>
                         </div>
+                        <nav id="nav-variant" role="">
                         <div id="second-menu">
                         <div id="conteiner-nav-in-center">
-                            <nav id="nav-variant" role="">
+
                                 
                                     <li>
                                         <a href="home-page.html">Home</a>
@@ -54,33 +59,43 @@
                                         <a href="custon-search-page.html">Busca Personalizada</a>
                                     </li>
                                     <li>
-                                        <a href="see-some-sights.html">Visite</a>
+                                        <a href="see-some-sights.html">Pontos Turísticos</a>
                                     </li>
+                                <li>
+                                    <a href="contact-us.html">Entre em contato</a>
+                                </li>
                                     
                                 
                                 <div class = "dropDown">
+
                                            <button class = "dropbtn">Meus Eventos</button>   
                                    <!--DROPDOWN-->
-                                          <div class = "dropdown-content2">  
-                                              
-                                              
-                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
-                                                <a href="new-event.html">Novo Evento</a>
-                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                                <a href="favorite-events.html">Favoritos</a>
-                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
-                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
-                                              
+                                          <div class = "dropdown-content2">
+                                              <table>
+                                                <tr>
+                                                    <td><img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png"></td>
+                                                     <td><a href="new-event.html">Cadastrar Futuro evento</a></td>
+                                                    </tr>
+                                                  <tr>
+                                                    <td><img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png"></td>
+                                                      <td><a href="favorite-events.html">Eventos mais populares</a></td>
+                                                    </tr>
+                                                  <tr>
+                                                 <td><img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png"></td>
+                                                    <td><a href="my-events-list.html">Modificar evento já cadastrado</a> </td>
+                                             </tr></table>
                                               
                                             </div>
                                     </div>
-                            </nav>
+
                         </div>
                     </div>
+                        </nav>
                     </div>    
                 </div>
             </header>
         </div>
+<<<<<<< HEAD
         <div class="palavrasJogadasAoVento">
                 <h1>Veja os eventos perto de você</h1>
                 <h2>MAPA</h2>                
@@ -90,9 +105,15 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31875.12809002846!2d-59.98733371081893!3d-2.988839477026099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1493845644444" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <h6>RESOLVIDO PELO ANDRÉ</h6>
         </div>
+=======
+        <div class="block-principal">
+        <section id="introducao">
+>>>>>>> origin/master
             
-       
-        <div class="conteiner-ranking">
+        <div align="center" class="palavrasJogadasAoVento">
+            <p>O melhor site de busca para eventos e pontos turisticos de Manaus aqui você pode encontar facilmente os eventos mais recentes,descrição dos pontos turisticos além de avaliações como modo de busca.Tudo para seu lazer pleno com todo de bom que o cação do Amazonas pode oferecer! </p>
+           </div>
+              <div class="conteiner-ranking">
             <h2>Ranking</h2>
             <div clas="conteiner-ranking-boxes">
                 <div class="box"><!--SABEMOS QUE OS BOXES SERÃO IMPLEMENTADOS EM JS JÁ QUE UTILIZARÃO O BANCO DE DADOS-->
@@ -119,5 +140,22 @@
                 </div>
             </div>
         </div>
+          </section>
+
+            <aside id="artigo-home">
+                <hgroup id="home-article">
+                <h1>Veja os eventos perto de você</h1>
+                <h2>MAPA</h2>
+
+                </hgroup>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31875.12809002846!2d-59.98733371081893!3d-2.988839477026099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1493845644444" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+       </aside>
+            <footer id="rodape">
+                <p>Copyright &cppy; 2017 -André,Lucas,Nereida,Rafael</p>
+            </footer>
+        </div>
+
     </body>
-</html>
+</html
