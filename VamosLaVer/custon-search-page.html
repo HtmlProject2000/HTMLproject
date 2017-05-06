@@ -4,6 +4,7 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <link rel = "stylesheet" href = "_css/style-pages.css">
         <title></title>
+
     </head>
     <body>
         <div class="conteiner-top">
@@ -133,7 +134,8 @@
                     <input type="reset" id="btn-custon-search-eraser" value="limpar">
                 </li>
                 <li>
-                    <input type="button" id="btn-see-advanced-search" class = "accordion" name="btn-see-advanced-search" value="busca avançada"><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
+                   <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
+                    <div class = "panel">
                     <ul>
 
                             <h2>Busca Avançada</h2>
@@ -174,10 +176,26 @@
                                     <input type="reset" id="btn-custon-search-eraser" value="limpar">
                                 </li>
                             </ul>
-
+                        </div>
 
                 </li>
             </ul>
         </form>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function(){
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>

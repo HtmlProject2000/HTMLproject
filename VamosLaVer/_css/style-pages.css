@@ -219,3 +219,13 @@ footer#rodape{
     width:50%;
 }
 
+.panel{
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
