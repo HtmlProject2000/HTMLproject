@@ -201,3 +201,21 @@ footer#rodape{
     
     
 }
+
+
+
+
+
+
+/* custom search paage*/
+
+.conteiner-options{
+    float:left;
+    width:50%;
+}
+
+.form-custom-search{
+   float:right;
+    width:50%;
+}
+
