@@ -3,55 +3,45 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <link rel = "stylesheet" href = "_css/style-pages.css">
+        <script type="text/javascript" src="_Javascript/scripto.js"></script>
         <title></title>
 
     </head>
     <body>
         <div class="conteiner-top">
-            <header>
+            
+                 <!--<div class="conteiner-top">
+                    <div class="top-logo">
+                        VamosLáVer
+                    </div>
+                </div>-->
+
                 <div class="conteiner-navigation">
                     <div class="first-line-navigation">
                         <div class="conteiner-right-top">
                             <nav class="right-top-menu" role="navigation">
-                                <ul>
-                                    <li>
-                                        MENU
-                                        <ul><!--DropDown-->
-                                            <li>
-                                                <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>
-                                            </li>
-                                            <li>
-                                                
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Entre em contato</a>
-                                            </li>
-                                            <li>
-                                                <a href="about-us.html">Apresentação do site</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div class = "dropDown">                                  
+                                      </div>            
                             </nav>
                         </div>
                         <div class="search-box">
                             <input type="text" id="txt-search-box" placeholder="Buscar..."/>
                             <button  id="btn-search">
                                 <a href="search-result.html">
-                                    <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
+                                    <img alt="buscar" height="10px" width="10px" src="_imagens/search-icon-png.png" >
                                 </a>
                             </button>
                         </div>
-                        <div class= "login-or-sign-in-box">
+                        <div class="login-or-sign-in-box">
                             <a href="login-or-sing-in-page.html">
                                 <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
                             </a>
                         </div>
-                    </div>
-                    <div id="second-line">
-                        <div id="conteiner-nav-in-center">
-                            <nav id="nav-variant" role="">
-                                <ul>
+                        <nav id="nav-variant" role="">
+                        <div id="second-menu">
+                        
+                            
+                                
                                     <li>
                                         <a href="home-page.html">Home</a>
                                     </li>
@@ -59,32 +49,43 @@
                                         <a href="custon-search-page.html">Busca Personalizada</a>
                                     </li>
                                     <li>
-                                        <a href="see-some-sights.html">Visite</a>
+                                        <a href="see-some-sights.html">Pontos Turísticos</a>
                                     </li>
-                                    <li>
-                                        Meus Eventos
-                                        <ul><!--DROPDOWN-->
-                                            <li>
-                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
-                                                <a href="new-event.html">Novo Evento</a>
-                                            </li>
-                                            <li>
-                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                                <a href="favorite-events.html">Favoritos</a>
-                                            </li>
-                                            <li>
-                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
-                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+                                <li>
+                                    <a href="contact-us.html">Entre em contato</a>  
+                                </li>
+                                    
+                                
+                                <div class = "dropDown">
+                                    
+                                           <button class = "dropbtn">Meus Eventos</button>   
+                                   <!--DROPDOWN-->
+                                          <div class = "dropdown-content2">                                              
+                                              <table>
+                                                <tr>
+                                                    <td><img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png"></td>
+                                                     <td><a href="new-event.html">Cadastrar Futuro evento</a></td>
+                                                    </tr>
+                                                  <tr>
+                                                    <td><img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png"></td>
+                                                      <td><a href="favorite-events.html">Eventos mais populares</a></td>
+                                                    </tr>
+                                                  <tr>
+                                                 <td><img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png"></td>
+                                                    <td><a href="my-events-list.html">Modificar evento já cadastrado</a> </td>
+                                             </tr></table>   
+                                              
+                                            </div>
+                                    </div>
+                            </div>
+                            
+                        </nav>
                     </div>
-                </div>
-            </header>
+            </div>    
         </div>
+        
+        
+        <!--  -->
         <div class="conteiner-options">
             Opções de exibição
             <nav class="nav-options">
@@ -108,6 +109,7 @@
                 </ul>
             </nav>
         </div>
+        
         <form method="get" class="form-custon-search">
             <h1>Busca Personalizada</h1>
             <ul>
@@ -136,8 +138,9 @@
 
             </ul>
         </form>
+    
            <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
-                    <div class = "panel">
+<div class = "panel">
                     <ul>
 
                             <h2>Busca Avançada</h2>
