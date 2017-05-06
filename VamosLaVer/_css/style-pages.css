@@ -53,6 +53,8 @@ aside#artigo-home{
 
 }
 
+}
+
 
 footer#rodape{
     clear: both;/*limpa a configuração dos 2 lados*/
@@ -223,9 +225,5 @@ footer#rodape{
     padding: 0 18px;
     display: none;
     background-color: white;
-}
-
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
 }
 
