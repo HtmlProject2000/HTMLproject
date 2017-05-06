@@ -185,15 +185,16 @@ footer#rodape{
     width: 800px;
     top:8px;
     right: 750px;
+    
 
     
     
 }
 
-#nav-variant a{    
+#nav-variant li a{    
     text-decoration: none;
     padding-right: 20px ;
-
+    color: white;
 
 }
 
@@ -203,9 +204,6 @@ footer#rodape{
     
     
 }
-
-
-
 
 
 
