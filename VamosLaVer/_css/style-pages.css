@@ -232,7 +232,7 @@ footer#rodape{
 }
 #btn-sidenav {
     top: 20px;
-    background-color: #00b38b;
+    background-color: #0c6ac6;
 }
 /* MODAL */
 .txts{
@@ -246,7 +246,7 @@ footer#rodape{
     resize: vertical;
 }
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #0c6ac6;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -255,7 +255,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #0087a1;
 }
 
 .container {
@@ -285,7 +285,7 @@ input[type=submit]:hover {
 }
 
 .close {
-    color: #aaa;
+    color: #ffffff;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -293,7 +293,7 @@ input[type=submit]:hover {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
@@ -309,7 +309,7 @@ input[type=submit]:hover {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #00c4fe;
     color: white;
 }
 
@@ -317,7 +317,7 @@ input[type=submit]:hover {
 .modal-footer {
     height: 60px;
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #00c4fe;
     color: white;
 }
 /* END of contat-us */
