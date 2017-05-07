@@ -315,6 +315,7 @@ input[type=submit]:hover {
 
 .modal-body {padding: 2px 16px;}
 .modal-footer {
+    height: 60px;
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
