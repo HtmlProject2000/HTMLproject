@@ -182,16 +182,22 @@ footer#rodape{
 /* custom search paage*/
 
 .conteiner-options{
+    display:block;
     float:left;
-    width:50%;
-    position: relative;
-    top: 100px;
+    width:30/%;
+   padding-top:100px;
+}
+.formulario{
+    display:block;
+    float:right;
+    width:70%;
+    height:550px;
+    position:relative;
+    top:60px;
+    border-left: 1px solid gray;
 }
 
-.form-custom-search{
-   float:right;
-    width:50%;
-}
+
 
 .formulario li{
    padding-bottom: 3px;
@@ -201,16 +207,14 @@ footer#rodape{
     padding: 0 18px;
     display: none;
     background-color: white;
+    transition:.5s;
 }
 
-.formulario{
-    position: relative;
-    top: 100px;
-}
+
 
 .accordion{
     position: relative;
-    top:110px;
+
 }
 
         /*CONTAC-US */

@@ -86,69 +86,65 @@
         
         
         <!--  -->
-        <div class="conteiner-options">
-            Opções de exibição
-            <nav class="nav-options">
-                <ul class="nav-ul-options">
-                    <li class="nav-ul-li-options">
-                        <label for="btn-alphabetical-order">Ordem Afabética</label>
-                        <input type="button" id="btn-alphabetical-order" value="↑ or ↓"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "↑" ou "↓" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
+        <div id = "corpo-custom-search" style = "width:1250px;">
+            <div class="conteiner-options">
+                Opções de exibição
+                <nav class="nav-options">
+                    <ul class="nav-ul-options">
+                        <li class="nav-ul-li-options">
+                            <label for="btn-alphabetical-order">Ordem Afabética</label>
+                            <input type="button" id="btn-alphabetical-order" value="↑ or ↓"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "↑" ou "↓" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
+                        </li>
+                        <li class="nav-ul-li-options">
+                            <label for="btn-chrnological-order">Ordem Cronológica</label>
+                            <input type="button" id="btn-chrnological-order" value="↑ or ↓">
+                        </li>
+                        <li class="nav-ul-li-options">
+                            <label for="tbn-increscent-decrescent-order">Ordem de Qtd. prevista de Visitantes</label>
+                            <input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓">
+                        </li>
+                        <li class="nav-ul-li-options">
+                            <label for="checkbox-my-events">Meus eventos</label>
+                            <input type="checkbox" id="checkbox-my-events" value="Meus">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+         <div class="formulario">
+            <form method="get" class="form-custon-search">
+                <h1>Busca Personalizada</h1>
+                <ul>
+                    <li>
+                        <label for="txt-name">Nome:</label>
+                        <input type="text" name="txt-name" id="txt-name"/>
                     </li>
-                    <li class="nav-ul-li-options">
-                        <label for="btn-chrnological-order">Ordem Cronológica</label>
-                        <input type="button" id="btn-chrnological-order" value="↑ or ↓">
+                    <li>
+                        <label for="date-initial">Data:</label>
+                        <input type="date" name="date-initial" id="date-initial"/>
+                        <label for="date-limit">a</label>
+                        <input type="date" name="date-initial" id="date-initial"/>
                     </li>
-                    <li class="nav-ul-li-options">
-                        <label for="tbn-increscent-decrescent-order">Ordem de Qtd. prevista de Visitantes</label>
-                        <input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓">
-                    </li>
-                    <li class="nav-ul-li-options">
-                        <label for="checkbox-my-events">Meus eventos</label>
-                        <input type="checkbox" id="checkbox-my-events" value="Meus">
+                    <li>
+                        <label for="select-category">Categoria:</label>
+                        <select id="select-category">
+                            <option value="escolher">A definir</option>
+                        </select>
                     </li>
                 </ul>
-            </nav>
-        </div>
-     <div class="formulario">   
-        <form method="get" class="form-custon-search">
-            <h1>Busca Personalizada</h1>
-            <ul>
-                <li>
-                    <label for="txt-name">Nome:</label>
-                    <input type="text" name="txt-name" id="txt-name"/>
-                </li>
-                <li>
-                    <label for="date-initial">Data:</label>
-                    <input type="date" name="date-initial" id="date-initial"/>
-                    <label for="date-limit">a</label>
-                    <input type="date" name="date-initial" id="date-initial"/>
-                </li>
-                <li>
-                    <label for="select-category">Categoria:</label>
-                    <select id="select-category">
-                        <option value="escolher">A definir</option>
-                    </select>
-                </li>
-                <li>
-                    <button id="tbn-custon-search-go">
-                        <img src="_imagens/arrow-right-black.png" height="15px" width="15px">Buscar
-                    </button>
-                    <input type="reset" id="btn-custon-search-eraser" value="limpar">
-                </li>
+            </form>
+           <div>
+             <button id="tbn-custon-search-go">
+                            <img src="_imagens/arrow-right-black.png" height="15px" width="15px">Buscar
+                        </button>
+                        <input type="reset" id="btn-custon-search-eraser" value="limpar">
 
-            </ul>
-        </form>
-    </div>
-    
-           <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
-<div class = "panel">
+             <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
+            <div class = "panel">
                     <ul>
-
-                            <h2>Busca Avançada</h2>
-
-                                <li>
-                                    Local
-                                    <ul>
+                        <h2>Busca Avançada</h2>
+                        <li>
+                            Local
+                                <ul>
 <!--
                                         <li>
                                             <label for="select-advanced-search-estado">Estado</label>
@@ -183,6 +179,10 @@
                                 </li>
                             </ul>
                         </div>
+               </div>
+            </div>
+        </div>
+
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
