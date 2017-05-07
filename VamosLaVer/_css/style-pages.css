@@ -218,10 +218,10 @@ footer#rodape{
 #side-nav-id button{
     position: absolute;
     top: 30%;
-    left: -90px;
+    left: -100px;
     transition: 0.3s;
     padding: 15px;
-    width: 100px;
+    width: 120px;
     text-decoration: none;
     font-size: 15px;
     color: white;
