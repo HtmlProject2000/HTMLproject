@@ -210,13 +210,16 @@ footer#rodape{
 /* custom search paage*/
 
 .conteiner-options{
+    display: block;
     float:left;
-    width:50%;
+    width:30%;
+    padding-top:60px;
 }
 
-.form-custom-search{
-   float:right;
-    width:50%;
+#div-form-custom-search{
+   display:block;
+    float:right;
+    width:70%;
 }
 
 .panel{
