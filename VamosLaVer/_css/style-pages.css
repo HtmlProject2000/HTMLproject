@@ -182,16 +182,13 @@ footer#rodape{
 /* custom search paage*/
 
 .conteiner-options{
+    display:block;
     float:left;
-    width:50%;
-    position: relative;
-    top: 100px;
+    width:30%;
+    padding-top:100px;
 }
 
-.form-custom-search{
-   float:right;
-    width:50%;
-}
+
 
 .formulario li{
    padding-bottom: 3px;
@@ -204,14 +201,13 @@ footer#rodape{
 }
 
 .formulario{
-    position: relative;
-    top: 100px;
+    display:block;
+    float:right;
+    width:70%;
+   padding-top:60px;
 }
 
-.accordion{
-    position: relative;
-    top:110px;
-}
+
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/

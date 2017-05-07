@@ -86,6 +86,7 @@
         
         
         <!--  -->
+
         <div class="conteiner-options">
             Opções de exibição
             <nav class="nav-options">
@@ -129,19 +130,16 @@
                         <option value="escolher">A definir</option>
                     </select>
                 </li>
-                <li>
-                    <button id="tbn-custon-search-go">
+            </ul>
+        </form>
+
+         <div id = "botoes-busca-personalizada">
+           <button id="tbn-custon-search-go">
                         <img src="_imagens/arrow-right-black.png" height="15px" width="15px">Buscar
                     </button>
                     <input type="reset" id="btn-custon-search-eraser" value="limpar">
-                </li>
-
-            </ul>
-        </form>
-    </div>
-    
-           <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
-<div class = "panel">
+        <button class = "accordion">Busca Avançada</button><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
+        <div class = "panel">
                     <ul>
 
                             <h2>Busca Avançada</h2>
@@ -183,6 +181,11 @@
                                 </li>
                             </ul>
                         </div>
+             </div>
+    </div>
+
+
+
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
