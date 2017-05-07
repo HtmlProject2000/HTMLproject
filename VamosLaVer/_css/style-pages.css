@@ -24,7 +24,8 @@
     width:100%;
     top:0px;
     left:0px;
-    opacity:1;
+    opacity:0.4;
+    
 }
 section#introducao{
     display: block;
@@ -101,35 +102,6 @@ footer#rodape{
     display: inline-block;
 }
 
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: skyblue;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-color: black;
-    border-radius: 10px;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropDown:hover .dropdown-content {
-    display: block;
-}
-
-.dropDown:hover .dropbtn {
-    background-color: #3e8e41;
-}
 
 /*FIM DO DROPIDOUM*/
 
@@ -210,16 +182,19 @@ footer#rodape{
 /* custom search paage*/
 
 .conteiner-options{
-    display: block;
     float:left;
-    width:30%;
-    padding-top:60px;
+    width:50%;
+    position: relative;
+    top: 100px;
 }
 
-#div-form-custom-search{
-   display:block;
-    float:right;
-    width:70%;
+.form-custom-search{
+   float:right;
+    width:50%;
+}
+
+.formulario li{
+   padding-bottom: 3px;
 }
 
 .panel{
@@ -228,3 +203,12 @@ footer#rodape{
     background-color: white;
 }
 
+.formulario{
+    position: relative;
+    top: 100px;
+}
+
+.accordion{
+    position: relative;
+    top:110px;
+}
