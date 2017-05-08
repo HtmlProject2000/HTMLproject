@@ -288,13 +288,18 @@ input[type=submit]:hover {
     background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1s
 }
-
 .close {
     color: #ffffff;
     float: right;
@@ -356,6 +361,7 @@ section#introducao-semBorda h3{
     padding: 0px; 
     margin-top: 0px;
 }
+
 /* NEW ENVET */
 .form-add-new-event {
     width: 30%;
