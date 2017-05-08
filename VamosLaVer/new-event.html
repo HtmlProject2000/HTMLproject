@@ -84,56 +84,56 @@
             </header>
         </div>
         <div class="block-principal">
+            <h1>Novo evento</h1>
             <form method="get" class="form-add-new-event">
-                <h1>Novo evento</h1>
-                <ul>
-                    <li>
-                        <label for="txt-name">Nome:</label>
-                        <input type="text" name="txt-name" id="txt-name"/>
-                    </li>
-                    <li>
-                        <label for="date-initial">Data:</label>
-                        <input type="date" name="date-initial" id="date-initial"/>
-                        <label for="date-limit">a</label>
-                        <input type="date" name="date-initial" id="date-initial"/>
-                    </li>
-                    <li>
-                        <label for="select-category">Categoria:</label>
-                        <select id="select-category">
-                            <option value="escolher">A definir</option>
-                        </select>
-                    </li>
-    <!--
-                    <li>
-                        <label for="select-add-new-event">Estado</label>
-                        <select id="select-add-new-event">
-                            <option value="none">Vazio</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="select-add-new-event">Cidade</label>
-                        <select id="select-add-new-event">
-                            <option value="none">Vazio</option>
-                        </select>
-                    </li>
-    -->
-                    <li>
-                        <label for="select-add-new-event">Bairro</label>
-                        <select id="select-add-new-event">
-                            <option value="none">vazio</option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="textarea-descrition-add-new-event">Descrição</label>
-                        <textarea id="textarea-add-new-event" rows="4" cols="50" placeholder="Digite sua descrição do evento aquí!!" ></textarea>
-                    </li>
-                    <li>
-                        <button id="tbn-add-new-event">
-                            <img src="_imagens/arrow-right-black.png" height="15px" width="15px">Concluído
-                        </button>
-                        <input type="reset" id="btn-add-new-event" value="limpar">
-                    </li>
-                </ul>
+                <table class="tbl-form">
+                    <tr>
+                        <td>
+                            <label for="txt-name">Nome</label>
+                        </td>
+                        <td>
+                            <input type="text" class="txts" name="txt-name" id="txt-name"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="date-initial">Data</label>
+                        </td>
+                        <td>
+                            <input type="date" class="boxes" name="date-initial" id="date-initial"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="select-category">Categoria</label>
+                        </td>
+                        <td>
+                            <select id="select-category" class="boxes">
+                                <option value="escolher">A definir</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="select-add-new-event">Bairro</label>
+                        </td>
+                        <td>
+                            <select id="select-add-new-event" class="boxes">
+                                <option value="none">vazio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="textarea-descrition-add-new-event">Descrição</label>
+                        </td>
+                        <td>
+                            <textarea id="textarea-add-new-event" class="txts" style="height:100px" placeholder="Digite sua descrição do evento aquí!!" ></textarea>
+                        </td>
+                    </tr>
+                </table>
+                    <input type="submit" id="tbn-add-new-event" value="Concluído"/>
+                    <input type="reset" id="btn-cls-new-event" value="limpar"/>
             </form>
         </div>
     </body>
