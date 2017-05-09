@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash');
 @font-face{
     font-family:'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
@@ -11,10 +12,14 @@ left:50px;
 top:40px;
 }
 
-#name-site {position:absolute;
-left:200px;
+#name-site {
+position:absolute;
+left:550px;
 top:60px;
-font-family:Arial, Helvetica, sans-serif;
+font-family: 'Ravi Prakash', cursive;
+}
+div#name-site h1{
+    font-size: 45pt;
 }
 
 #redes-sociais {position:absolute;
