@@ -266,7 +266,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #0087a1;
+    background-color: #23bf45;
+    -webkit-animation-name: anim-color-submit;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes anim-color-submit {
+    from {background-color: #0c6ac6;}
+    to {background-color: #23bf45;}
+}
+@keyframes anim-color-submit {
+    from {background-color: #0c6ac6;}
+    to {background-color: #23bf45;}
 }
 
 .container {
@@ -375,8 +385,19 @@ input[type=reset] {
     cursor: pointer;
     float: right;
 }
+
 input[type=reset]:hover {
-    background-color: #0087a1;
+    background-color: red;
+    -webkit-animation-name: anim-color;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes anim-color {
+    from {background-color: #0c6ac6;}
+    to {background-color: red;}
+}
+@keyframes anim-color {
+    from {background-color: #0c6ac6;}
+    to {background-color: red;}
 }
 #date-content{
     width: 100%
