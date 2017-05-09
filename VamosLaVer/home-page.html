@@ -3,10 +3,20 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>Página inicial</title>
-        <script type="text/javascript" src="_Javascript/scripto.js"></script>
-        <link rel = "stylesheet" href = "_css/style-pages.css">
+        <!--<script type="text/javascript" src="_js/fixar.js"></script> -->      
+        <link rel = "stylesheet" href="_css/style-pages.css"/>
+         
     </head>
-    <body  >
+    <body>
+     
+     <div id="logo"><img src="_imagens/logo.png"></div>
+     <div id="name-site"><h1>VamoLáVer</h1></div>
+     <div id="redes-sociais"><img src="_imagens/redes-sociais.png"></div>
+     <div id="ranking"><img src="_imagens/ranking.png"></div>
+
+   
+     <div id="fundo-cabecalho"></div>
+     <div id="cabecalho"></div>
         <div class="conteiner-top">
             <header>
                  <!--<div class="conteiner-top">
@@ -16,40 +26,35 @@
                 </div>-->
                 <div class="conteiner-navigation">
                     <div class="first-line-navigation">
-                        <div class="conteiner-right-top">
-                            <nav class="right-top-menu" role="navigation">
-                                <div class = "dropDown">
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
-                            <button  id="btn-search">
-                                <a href="search-result.html">
-                                    <img alt="buscar" height="10px" width="10px" src="_imagens/search-icon-png.png" >
-                                </a>
-                            </button>
+                    <div id="fundo-nav"></div>
+
+                      <div class="search-box">
+                          <input type="text" id="txt-search-box" placeholder="Buscar..."/>
+                      <div id="pesquisar"><img src="_imagens/pesquisar.png"></div>     
                         </div>
                         <div class="login-or-sign-in-box">
                             <a href="login-or-sing-in-page.html">
-                                <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                                <img alt="login" height="30px" width="30px" src="_imagens/log.png"/>
                             </a>
+                         
                         </div>
-                        <nav id="nav-variant" role="">
-                            <div id="second-menu">
-                                <li>
-                                    <a href="home-page.html">Home</a>
-                                </li>
-                                <li>
+                        <div id="second-menu">
+                        <div id="conteiner-nav-in-center">
+                            <nav id="nav-variant" role="">
+                                
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Quem somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="pontos-turisticos.html">Pontos Turísticos</a>
+                                    </li>
+                                 <li>
                                     <a href="custon-search-page.html">Busca Personalizada</a>
                                 </li>
-                                <li>
-                                    <a href="pontos-turisticos.html">Pontos Turísticos</a>
-                                </li>
-                                <li>
-                                    <a href="contact-us.html">Entre em contato</a>  
-                                </li>
-                                <div class = "dropDown">
+                                   <div class = "dropDown">
                                     <button class = "dropbtn">Meus Eventos
                                     </button>   
                                    <!--DROPDOWN-->
@@ -81,13 +86,14 @@
                                         </tr>
                                     </table>   
                                 </div>
-                            </div>
+                                </div>
+                            </nav>
                         </div>
-                    </nav>
-                </div>    
-            </div>
-        </header>
-    </div>
+                    </div>
+                    </div>    
+                </div>
+            </header>
+        </div>
         <div class="block-principal">
             <section id="introducao">        
                 <div align="center" class="palavrasJogadasAoVento">
