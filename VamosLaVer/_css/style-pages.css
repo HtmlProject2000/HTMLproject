@@ -68,12 +68,11 @@ background-color:#CF0;
 }
 
 .first-line-navigation{
-    position:fixed;
     width:100%;
     top:0px;
     left:0px;
-    opacity:0.7;
-    
+    opacity:1;
+
 }
 section#introducao{
     display: block;
@@ -87,7 +86,7 @@ section#introducao{
 
 .login-or-sign-in-box img{
     position:absolute;
-    top:20px;
+    top:217px;
     right:25px;
 }
 aside#artigo-home{
@@ -223,22 +222,20 @@ footer#rodape{
 
 .search-box {
     position:absolute;
-    right:90px;
-    top:10px;
-    width:225px;
+    right:120px;
+    top:222px;
+    
 }
 #txt-search-box {height:22px;
 width:225px;
 }
 
 #second-menu{
-    position: fixed;
+    position:absolute;
     width: 800px;
-    top:8px;
-    left: 010px;
-    
-
-    
+    top:211px;
+    left: 11px;
+	overflow:hidden; 
     
 }
 
