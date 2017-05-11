@@ -277,10 +277,10 @@ width:225px;
    padding-top:100px;
 }
 .formulario{
-    display:block;
-    float:right;
+    /*display:block;
+    /*float:right;
     width:70%;
-    border-left: 1px solid gray;
+    border-left: 1px solid gray;*/
     padding:30px;
 }
 
@@ -308,7 +308,7 @@ width:225px;
 /* SIDE-NAV  of contact-us*/
 #side-nav-id button{
     position: absolute;
-    top: 30%;
+    top: 90%;
     left: -100px;
     transition: 0.3s;
     padding: 15px;
@@ -323,7 +323,7 @@ width:225px;
 }
 #btn-sidenav {
     top: 20px;
-    background-color: #0c6ac6;
+    background-color: #069;
 }
 /* MODAL */
 .txts{
