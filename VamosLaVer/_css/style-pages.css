@@ -27,7 +27,8 @@ right:40px;
 top:30px;
 }
 
-#ranking {position:absolute;
+#ranking img{
+position:absolute;
 left:60px;
 top:490px;
 }
@@ -272,17 +273,15 @@ width:225px;
 .conteiner-options{
     display:block;
     float:left;
-    width:30%;
+    width:25%;
    padding-top:100px;
 }
 .formulario{
     display:block;
     float:right;
     width:70%;
-    height:550px;
-    position:relative;
-    top:60px;
     border-left: 1px solid gray;
+    padding:30px;
 }
 
 
