@@ -57,6 +57,7 @@ background-color:#CF0;
 }
 .block-principal{
     width: 1250px;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
+    height:300px;
     background-color: #ffffff;
     margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading */
     box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
@@ -273,33 +274,55 @@ width:225px;
 
 
 
-#show-conteiner-options{
-     position:fixed;
-    top:0;
-    right:0;
+.conteiner-options{
+   display:block;
+    float:right;
     height:100%;
     width:100px;
 }
 
-#show-conteiner-options:hover .conteiner-options{
-    width:25%;
+.conteiner-options:hover .nav-options{
+    width:320px;
 }
 
-#show-conteiner-options .conteiner-options{
-    position:fixed;
-    top:0;
-    right:0;
-    height:100%;
+.conteiner-options .nav-options{
+    display:block;
+    float:right;
+    margin-top:120px;
+    height:130px;
     width:0px;
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s;
-    background-color:#0c6ac6;
+    transition: .5s;
+    background-color: #0c6ac6;
+    border-radius: 30px 0px 0px 30px;
+    padding-top:20px;
+}
+
+.nav-options table{
+    width:312.5px;
+}
+
+.nav-options table td{
+    color:#FFF;
+}
+
+.nav-options table td input{
+    font-weight: bolder;
+    background:linear-gradient(rgb(254,254,254),rgb(226,228,230));
+    border-radius:5px;
+    transition:.75s;
+}
+
+.nav-options table td input:hover{
+    color: dodgerblue;
+
 }
 
 .formulario{
-    /*display:block;
-    /*float:right;*/
+   display:block;
+    float:left;
     width:70%;
+    height:100%;
     padding:30px;
 }
 
