@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>Novo Evento</title>
-        <script type="text/javascript" src="_Javascript/scripto.js"></script>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
         <link rel = "stylesheet" href = "_css/style-pages.css">
     </head>
     <body>
@@ -29,7 +29,7 @@
                       <div id="pesquisar"><img src="_imagens/pesquisar.png"></div>
                         </div>
                         <div class="login-or-sign-in-box">
-                            <a href="login-or-sing-in-page.html">
+                            <a id="a-model-login" onclick="gomodellogin()">
                                 <img alt="login" height="30px" width="30px" src="_imagens/log.png"/>
                             </a>
 
@@ -142,6 +142,52 @@
                     <input type="submit" id="tbn-add-new-event" value="Concluído"/>
                     <input type="reset" id="btn-cls-new-event" value="limpar"/>
             </form>
+        </div>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <button id="btn-login-entrar">
+                                <img src="_imagens/arrow-right-black.png" height="15px" width="20px">Entrar
+                            </button>
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="submit" id="btn-login-entrar" value="Entrar">
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
         </div>
     </body>
 </html>

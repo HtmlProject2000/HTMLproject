@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title></title>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
     </head>
     <body>
         <div class="conteiner-top">
@@ -21,7 +22,7 @@
                                         MENU
                                         <ul><!--DropDown-->
                                             <il>
-                                                <a href="login-or-sing-in-page.html">Entre ou Cadastre-se</a>
+                                                <a id="a-model-login" onclick="gomodellogin()">Entre ou Cadastre-se</a>
                                             </il>
                                             <il>
                                                 
@@ -83,6 +84,30 @@
                 </div>
                 </div>
             </header>
+        </div>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <button id="btn-login-entrar">
+                                <img src="_imagens/arrow-right-black.png" height="15px" width="20px">Entrar
+                            </button>
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
         </div>
     </body>
 </html>

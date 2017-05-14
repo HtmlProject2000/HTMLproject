@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title></title>
-        <script type="text/javascript" src="_Javascript/scripto.js"></script>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
 <link rel = "stylesheet" href = "_css/style-pages.css">
     </head>
     <body>
@@ -31,7 +31,7 @@
                             </button>
                         </div>
                         <div class="login-or-sign-in-box">
-                            <a href="login-or-sing-in-page.html">
+                            <a id="a-model-login" onclick="gomodellogin()">
                                 <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
                             </a>
                         </div>
@@ -126,6 +126,28 @@
                     <div class="box-favorite">
                         <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="submit" id="btn-login-entrar" value="Entrar">
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
                 </div>
             </div>
         </div>
