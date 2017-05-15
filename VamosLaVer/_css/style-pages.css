@@ -57,7 +57,7 @@ background-color:#CF0;
 }
 .block-principal{
     width: 1250px;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
-    height:300px;
+    /*height:100%;*/
     background-color: #ffffff;
     margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading */
     box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
@@ -320,7 +320,7 @@ width:225px;
 
 .formulario{
    display:block;
-    float:left;
+    /*float:left;*/
     width:70%;
     height:100%;
     padding:30px;
