@@ -271,9 +271,23 @@ width:225px;
 
 
 /* custom search paage*/
-
-
-
+input[type=button] {
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: #23bf45;
+    -webkit-animation-name: anim-color-button;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes anim-color-button {
+    from {background-color: #0c6ac6;}
+    to {background-color: #0c6a6a;}
+}
 .conteiner-options{
    display:block;
     float:right;
@@ -315,7 +329,6 @@ width:225px;
 
 .nav-options table td input:hover{
     color: dodgerblue;
-
 }
 
 .formulario{
@@ -336,13 +349,16 @@ width:225px;
     background-color: white;
     transition:.5s;
 }
-
+.in-panel{
+    list-style-type: none;
+}
 
 
 .accordion{
     position: relative;
 
 }
+
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/
@@ -484,7 +500,7 @@ input[type=submit]:hover {
 section#introducao-semBorda{
     display: block;
     width: 1000px;
-    float:left;
+    /*float:left;*/
     padding: 35px 10px 5px 5px; /*cima direita baixo esqueda*/
     margin: 10px 10px 10px 10px ;
 
