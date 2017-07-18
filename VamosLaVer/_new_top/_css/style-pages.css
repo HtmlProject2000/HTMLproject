@@ -417,7 +417,7 @@ input[type=reset]:hover {
     overflow: hidden;
     background-color: #069;
     position: relative;
-    height: 50px;
+    height: auto;
     text-decoration: none;
 	text-transform:uppercase;
 	color:#FFF;
@@ -510,9 +510,8 @@ div#name-site h1{
 }
 
 .login-or-sign-in-box{
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    
+    padding: 14px 16px;
     position: relative;
     top: 0;
     left: 0;
