@@ -30,7 +30,7 @@ background-color:#CF0;
 }*/
 
 .block-principal{
-    width: 100%;
+    width: auto;
     height: 100%;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
     background-color: #ffffff;
     /*margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading */
@@ -490,7 +490,7 @@ div#name-site h1{
     border-radius: 4px;
     box-sizing: border-box;
     width: auto;
-    height: 25px;
+    height: 30px;
     text-align:center;
 }
 
@@ -502,8 +502,8 @@ div#name-site h1{
 }
 
 #img-a{
-    width: 25px;
-    height: 25px;
+    width: 32px;
+    height: 32px;
 }
 
 .login-or-sign-in-box{
