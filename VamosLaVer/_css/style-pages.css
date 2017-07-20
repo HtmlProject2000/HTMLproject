@@ -410,6 +410,8 @@ input[type=submit] {
     background-color: #0c6ac6;
     color: white;
     padding: 12px 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -543,11 +545,23 @@ section#introducao-semBorda h3{
 
 /* NEW EveNVET */
 
+#div-a{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #ffc226
+}
+
+.a{
+    position: relative;
+    margin-left: 20px;
+}
+
 .form-add-new-event {
     position: relative;
-    width: 30%;
-    left: 30%;
-    padding: 10px;
+    width: 100%;
     border-top-style: groove;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -556,19 +570,16 @@ section#introducao-semBorda h3{
 
 .tbl-form{
     position: relative;
-    width: auto;
-    left: 20%;
+    width: 80%;
+    left: 10%;
 }
 
-#div-a{
-    border-style: groove;
-    border-radius: 20px;
-    border-color: #ffc226
-}
 input[type=reset] {
     background-color: #0c6ac6;
     color: white;
     padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -580,17 +591,21 @@ input[type=reset]:hover {
     -webkit-animation-name: anim-color;
     -webkit-animation-duration: 2s;
 }
+
 @-webkit-keyframes anim-color {
     from {background-color: #0c6ac6;}
     to {background-color: red;}
 }
+
 @keyframes anim-color {
     from {background-color: #0c6ac6;}
     to {background-color: red;}
 }
+
 #date-content{
-    width: 100%
+   width: 100%
 }
+
 .boxes{
     width: 100%;
     padding: 12px;
