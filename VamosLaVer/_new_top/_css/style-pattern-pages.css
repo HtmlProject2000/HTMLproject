@@ -38,37 +38,41 @@ background-color:#CF0;
     /*padding: 10px 10px 100px 10px;*/
     position:relative;
 }
-.palavrasJogadasAoVento{
+
+/*.palavrasJogadasAoVento{
     position: relative;
     width: 50%;
-}
-.palavrasJogadasAoVento h1{
+}*/
+
+/*.palavrasJogadasAoVento h1{
     padding-top: 90px;
     font-style: italic;
     text-decoration: underline;
     text-align: center;
-}
-.palavrasJogadasAoVento p{
+}*/
+
+/*.palavrasJogadasAoVento p{
     text-align: justify;
     text-indent: 50px;
-}
+}*/
 
-.first-line-navigation{
+/*.first-line-navigation{
     width:100%;
     top:0px;
     left:0px;
     opacity:1;
 
-}
-section#introducao{
-    /*width: 100%;*/
+}*/
+
+/*section#introducao{
+    /*width: 100%;*
     float:left;
-    padding: 5px 10px 5px 5px; /*cima direita baixo esqueda*/
+    padding: 5px 10px 5px 5px; /*cima direita baixo esqueda*
     margin: 10px 10px 10px 10px ;
     position: relative;
-}
+}*/
 
-aside#artigo-home{
+/*aside#artigo-home{
    display: block;
     width: 550px;
     background-color: Skyblue;
@@ -76,7 +80,7 @@ aside#artigo-home{
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
     position: relative;
-}
+}*/
 
 footer#rodape{
     clear: both;/*limpa a configuração dos 2 lados*/
@@ -85,7 +89,7 @@ footer#rodape{
     width: 100%;
 }
 
-.right-top-menu{
+/*.right-top-menu{
     display:block;
     background: linear-gradient(skyblue,DodgerBlue);
     padding: 10px 10px 10px;
@@ -93,12 +97,11 @@ footer#rodape{
     top:0px;
     opacity:1;
     height: 50px;
+}*/
 
-}
-
-.right-top-menu li{
+/*.right-top-menu li{
     display:inline-block;
-}
+}*/
 
 #ul1{
     list-style: none;
@@ -115,68 +118,60 @@ footer#rodape{
 	overflow:hidden; 
 }*/
 
-#nav-variant a{    
+/*#nav-variant a{    
     text-decoration: none;
     padding:15px;
 	text-transform:uppercase;
 	color:#FFF;
-	font-family:Arial, Helvetica, sans-serif;
-	
+	font-family:Arial, Helvetica, sans-serif;	
+}*/
 
-}
-
-#nav-variant li{
+/*#nav-variant li{
     display:inline-block;
 	padding:15px;
 	background-color:#069;
-	text-align:center;
-	 
-}
+	text-align:center;	 
+}*/
 
-#nav-variant li:hover{background-color:#036;}
-
-
-
+/*#nav-variant li:hover{background-color:#036;}*/
 
 /* custom search paage*/
 
-
-
-#show-conteiner-options{
+/*#show-conteiner-options{
      position:fixed;
     top:0;
     right:0;
     height:100%;
     width:100px;
-}
+}*/
 
-#show-conteiner-options:hover .conteiner-options{
+/*#show-conteiner-options:hover .conteiner-options{
     width:25%;
-}
+}*/
 
-#show-conteiner-options .conteiner-options{
+/*#show-conteiner-options .conteiner-options{
     position:fixed;
     top:0;
     right:0;
     height:100%;
     width:0px;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-x: hidden; /* Disable horizontal scroll 
     transition: 0.5s;
     background-color:#0c6ac6;
-}
+}*/
 
-.formulario{
+/*.formulario{
     /*display:block;
-    /*float:right;*/
+    /*float:right;*
     width:70%;
     padding:30px;
-}
+}*/
 
-.formulario li{
+/*.formulario li{
    padding-bottom: 3px;
-}
+}*/
 
-.panel{
+/*.panel{
     padding: 0 18px;
     display: none;
     background-color: white;
@@ -188,11 +183,12 @@ footer#rodape{
 .accordion{
     position: relative;
 
-}
+}*/
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/
-#side-nav-id a{
+
+/*#side-nav-id a{
     position: absolute;
     top: 85%;
     left: -100px;
@@ -204,13 +200,16 @@ footer#rodape{
     color: white;
     border-radius: 0 5px 5px 0;
 }
+
 #side-nav-id a:hover{
     left: 0;
 }
+
 #btn-sidenav {
     top: 20px;
     background-color: #069;
-}
+}*/
+
 /* MODAL */
 .txts{
     width: 100%;
@@ -326,15 +325,16 @@ input[type=submit]:hover {
     background-color: #00c4fe;
     color: white;
 }
+
 /* END of contat-us */
-section#introducao-semBorda{
+/*section#introducao-semBorda{
     display: block;
     width: 50%;
-    padding: 35px 10px 5px 5px; /*cima direita baixo esqueda*/
+    padding: 35px 10px 5px 5px; /*cima direita baixo esqueda
     margin: 10px 10px 10px 10px ;
     position: relative;
-
 }
+
 section#introducao-semBorda h1{
     font-family:'FonteLogo',sans-serif;
     font-size: 30pt;
@@ -350,12 +350,12 @@ section#introducao-semBorda h3{
     font-size: 15pt;
     padding: 0px; 
     margin-top: 0px;
-}
-
+}*/
 /* NEW ENVET */
-.form-add-new-event {
+/*.form-add-new-event {
     width: 30%;
-}
+}*/
+
 input[type=reset] {
     background-color: #0c6ac6;
     color: white;
@@ -371,17 +371,21 @@ input[type=reset]:hover {
     -webkit-animation-name: anim-color;
     -webkit-animation-duration: 2s;
 }
+
 @-webkit-keyframes anim-color {
     from {background-color: #0c6ac6;}
     to {background-color: red;}
 }
+
 @keyframes anim-color {
     from {background-color: #0c6ac6;}
     to {background-color: red;}
 }
+
 #date-content{
     width: 100%
 }
+
 .boxes{
     width: 100%;
     padding: 12px;
