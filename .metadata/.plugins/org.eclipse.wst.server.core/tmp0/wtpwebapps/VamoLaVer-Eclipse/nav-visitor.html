@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title></title>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
+    </head>
+    <body>
+        <div class="conteiner-top">
+            <header>
+                <div class="conteiner-top"><!--LOGO SEM IMAGEM-->
+                    <div class="top-logo">
+                        VamosLáVer
+                    </div>
+                </div>
+                <div class="conteiner-navigation">
+                    <div class="first-line-navigation">
+                        <div class="conteiner-right-top">
+                            <nav class="right-top-menu" role="navigation">
+                                <ul>
+                                    <il>
+                                        MENU
+                                        <ul><!--DropDown-->
+                                            <il>
+                                                <a id="a-model-login" onclick="gomodellogin()">Entre ou Cadastre-se</a>
+                                            </il>
+                                            <il>
+                                                
+                                            </il>
+                                            <il>
+                                                <a href="contact-us.html">Entre em contato</a>
+                                            </il>
+                                            <il>
+                                                <a href="about-us.html">Apresentação do site</a>
+                                            </il>
+                                        </ul>
+                                    </il>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="search-box">
+                            <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
+                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
+                            <button  id="btn-search">Buscar</button>
+                        </div>
+                        <div class="login-or-sing-in-box">
+                            <button id="btn-login-or-sing-in" >Login</button>
+                            <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
+                        </div>
+                    </div>
+                    <div id="second-line">
+                    <div id="conteiner-nav-in-center">
+                        <nav id="nav-variant" role="">
+                            <ul>
+                                <il>
+                                    <a href="home-page.html">Home</a>
+                                </il>
+                                <il>
+                                    <a href="custon-search-page.html">Busca Personalizada</a>
+                                </il>
+                                <il>
+                                    <a href="pontos-turisticos.html">Visite</a>
+                                </il>
+                                <il>
+                                    Meus Eventos
+                                    <ul><!--DROPDOWN-->
+                                        <il>
+                                            <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                            <a href="new-event.html">Novo Evento</a>
+                                        </il>
+                                        <il>
+                                            <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                            <a href="favorite-events.html">Favoritos</a>
+                                        </il>
+                                        <il>
+                                            <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                            <a href="my-events-list.html">Minha Lista de Eventos</a>
+                                        </il>
+                                    </ul>
+                                </il>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                </div>
+            </header>
+        </div>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <button id="btn-login-entrar">
+                                <img src="_imagens/arrow-right-black.png" height="15px" width="20px">Entrar
+                            </button>
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

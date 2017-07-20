@@ -1,0 +1,20 @@
+@charset "utf-8";
+.tamanhoReduzido {
+    max-width:1000px;
+    max-height:550px;
+    width: auto;
+    height: auto;
+}
+iframe#frame-spec{
+    width: 550px;
+    height: 500px;
+    border: none;
+    overflow: hidden;/*evita que a rolagem aconteça*/
+    
+}
+iframe#frame-spec::-webkit-scrollbar{
+    display: none;
+}
+.img-dir{
+    
+}

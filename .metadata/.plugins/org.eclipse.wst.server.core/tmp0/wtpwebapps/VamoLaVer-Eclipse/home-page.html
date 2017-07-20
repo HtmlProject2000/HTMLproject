@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Página inicial</title>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>     
+        <link rel = "stylesheet" href="_css/style-pages.css"/>
+        <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
+    </head>
+    <body class="block-principal">
+        <div id="container-header">
+            <div id="logo">
+                <img src="_imagens/logo.png">
+            </div>
+            <div id="name-site">
+                <h1>VamoLáVer</h1>
+            </div>
+            <div id="redes-sociais">
+                <img src="_imagens/redes-sociais.png">
+            </div>
+            <!--<div id="ranking"><img src="_imagens/ranking.png"></div>-->
+            <ul class="navigation-bar">
+                <li class="navlink">
+                    <a href="home-page.html">Home</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact-us.html">Quem Somos?</a>
+                </li>
+                <li class="navlink">
+                    <a href="pontos-turisticos.html">Pontos Turisticos</a>
+                </li>
+                <li class="navlink">
+                    <a href="custon-search-page.html">Busca Personalizada</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <a href="javascript:void(0)" class="dropbtn">Meus Eventos</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                </td>
+                                <td>
+                                    <a href="new-event.html">Cadastrar Futuro evento</a>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                    </td>
+                                    <td>
+                                        <a href="favorite-events.html">Eventos mais populares</a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                </td>
+                                <td>
+                                    <a href="edit-my-events.html">Modificar evento já cadastrado</a>
+                                </td>
+                            </tr>
+                        </table> 
+                    </div>
+                </li>
+                <li class="navlink">
+                    <div class="search-box">
+                        <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
+                        <div id="pesquisar"><img id="img-a" src="_imagens/pesquisar.png"></div>
+                    </div>
+                </li>
+                <li class="navlink">
+                    <a id="a-model-login" onclick="gomodellogin()">
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-content">
+            <section id="introducao">        
+                <div align="center" class="palavrasJogadasAoVento">
+                    <p>O melhor site de busca para eventos e pontos turisticos de Manaus aqui você pode encontar facilmente os eventos mais recentes,descrição dos pontos turisticos além de avaliações como modo de busca.Tudo para seu lazer pleno com todo de bom que o cação do Amazonas pode oferecer! </p>
+                </div>
+                <div class="conteiner-ranking">
+                    <h2>Ranking</h2>
+                    <div clas="conteiner-ranking-boxes">
+                        <div class="box"><!--SABEMOS QUE OS BOXES SERÃO IMPLEMENTADOS EM JS JÁ QUE UTILIZARÃO O BANCO DE DADOS-->
+                            <div class="box-position">
+                                <!-- A POSIÇÃO DO BOX -->
+                            </div>
+                            <div class="box-informations">
+                                <!--
+                                    NOME:____________
+                                    DATA:__/__/____
+                                    CATEGORIA:_______
+                                -->
+                            </div>
+                            <div class="box-description">
+                                <!--
+                                    DESCRIÇÃO:____________
+                                    ______________________
+                                    ______________________
+                                -->
+                            </div>
+                            <div class="box-favorite">
+                                <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </section>
+            <aside id="artigo-home">
+            <hgroup align="center" id="home-article">
+                <h1 >Veja os eventos perto de você</h1>
+                <h2>MAPA</h2>                
+            </hgroup>
+            <iframe align="center" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31875.12809002846!2d-59.98733371081893!3d-2.988839477026099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1493845644444" width="400" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </aside>
+        </div>
+        <footer id="rodape">
+            <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
+        </footer>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="submit" id="btn-login-entrar" value="Entrar">
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

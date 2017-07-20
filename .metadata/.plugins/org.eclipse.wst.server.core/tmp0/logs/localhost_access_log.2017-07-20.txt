@@ -1,0 +1,11 @@
+127.0.0.1 - - [20/Jul/2017:17:33:07 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/home-page.html HTTP/1.1" 200 7479
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_Javascript/contact-us-js.js HTTP/1.1" 200 1995
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_css/style-pages.css HTTP/1.1" 200 11878
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_css/style-pattern-pages.css HTTP/1.1" 200 10229
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/logo.png HTTP/1.1" 200 30359
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/redes-sociais.png HTTP/1.1" 200 8889
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/add-png-black.png HTTP/1.1" 200 18049
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/star-favorite-black-png.png HTTP/1.1" 200 11734
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/list-icon-png-black.png HTTP/1.1" 200 4582
+0:0:0:0:0:0:0:1 - - [20/Jul/2017:17:33:09 -0400] "GET /VamoLaVer-Eclipse/_imagens/pesquisar.png HTTP/1.1" 200 4526
