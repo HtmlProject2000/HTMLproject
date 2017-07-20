@@ -4,111 +4,103 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>Entre em contato</title>
         <link rel = "stylesheet" href = "_css/style-pages.css">
+        <link rel = "stylesheet" href = "_css/style-pattern-pages.css">
         <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
     </head>
-    <body>
-
-     <div id="logo"><img src="_imagens/logo.png"></div>
-     <div id="name-site"><h1>VamoLáVer</h1></div>
-     <div id="redes-sociais"><img src="_imagens/redes-sociais.png"></div>
-     <div id="ranking"><img src="_imagens/ranking.png"></div>
-
-
-     <div id="fundo-cabecalho"></div>
-     <div id="cabecalho"></div>
-        <div class="conteiner-top">
-            <header>
-                 <!--<div class="conteiner-top">
-                    <div class="top-logo">
-                        VamosLáVer
+    <body class="block-principal">
+        <div id="conteiner-header">
+            <div id="logo">
+                <img src="_imagens/logo.png">
+            </div>
+            <div id="name-site">
+                <h1>VamoLáVer</h1>
+            </div>
+            <div id="redes-sociais">
+                <img src="_imagens/redes-sociais.png">
+            </div>
+            <!--<div id="ranking"><img src="_imagens/ranking.png"></div>-->
+            <ul class="navigation-bar">
+                <li class="navlink">
+                    <a href="home-page.html">Home</a>
+                </li>
+                <li class="navlink">
+                    <a href="contact-us.html">Quem Somos?</a>
+                </li>
+                <li class="navlink">
+                    <a href="pontos-turisticos.html">Pontos Turisticos</a>
+                </li>
+                <li class="navlink">
+                    <a href="custon-search-page.html">Busca Personalizada</a>
+                </li>
+                <li class="dropdown">
+                    <div>
+                        <a href="javascript:void(0)" class="dropbtn">Meus Eventos</a>
                     </div>
-                </div>-->
-                <div class="conteiner-navigation">
-                    <div class="first-line-navigation">
-                    <div id="fundo-nav"></div>
-
-                      <div class="search-box">
-                          <input type="text" id="txt-search-box" placeholder="Buscar..."/>
-                      <div id="pesquisar"><img src="_imagens/pesquisar.png"></div>
-                        </div>
-                        <div class="login-or-sign-in-box">
-                            <a id="a-model-login" onclick="gomodellogin()">
-                                <img alt="login" height="30px" width="30px" src="_imagens/log.png"/>
-                            </a>
-
-                        </div>
-                        <div id="second-menu">
-                        <div id="conteiner-nav-in-center">
-                            <nav id="nav-variant" role="">
-                                
-                                    <li>
-                                        <a href="home-page.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-us.html">Quem somos</a>
-                                    </li>
-                                    <li>
-                                        <a href="pontos-turisticos.html">Pontos Turísticos</a>
-                                    </li>
-                                 <li>
-                                    <a href="custon-search-page.html">Busca Personalizada</a>
-                                </li>
-                                   <div class = "dropDown">
-                                    <button class = "dropbtn">Meus Eventos
-                                    </button>
-                                   <!--DROPDOWN-->
-                                    <div class = "dropdown-content2">
-                                      <table>
-                                        <tr>
-                                            <td>
-                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
-                                            </td>
-                                            <td>
-                                                <a href="new-event.html">Cadastrar Futuro evento</a>
-                                            </td>
-                                        </tr>
-                                            <tr>
-                                                <td>
-                                                    <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                                </td>
-                                                <td>
-                                                    <a href="favorite-events.html">Eventos mais populares</a>
-                                                </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
-                                            </td>
-                                            <td>
-                                                <a href="edit-my-events.html">Modificar evento já cadastrado</a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                </div>
-                            </nav>
-                        </div>
+                    <div class="dropdown-content">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                </td>
+                                <td>
+                                    <a href="new-event.html">Cadastrar Futuro evento</a>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td>
+                                        <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                    </td>
+                                    <td>
+                                        <a href="favorite-events.html">Eventos mais populares</a>
+                                    </td>
+                                </tr>
+                            <tr>
+                                <td>
+                                    <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                </td>
+                                <td>
+                                    <a href="edit-my-events.html">Modificar evento já cadastrado</a>
+                                </td>
+                            </tr>
+                        </table> 
                     </div>
-                    </div>    
-                </div>
-            </header>
+                </li>
+                <li class="navlink">
+                    <div class="search-box">
+                        <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
+                        <div id="pesquisar"><img id="img-a" src="_imagens/pesquisar.png"></div>
+                    </div>
+                </li>
+                <li class="navlink">
+                    <a id="a-model-login" onclick="gomodellogin()">
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
         </div>
         <div id="side-nav-id" class="side-nav-class">
-            <a href="#" id="btn-sidenav" onclick="gomodelsidebar()">sugestões</a>
+            <a href="#" id="btn-sidenav" onfocus="gomodelsidebar()">sugestões</a>
         </div>
-        <div class="block-principal">
-            <article>
+        <div class="container-content">
+            <article class="presentation">
                 <h1>Apresentação</h1>
                 <div align="center" class="palavrasJogadasAoVento">
                     <p>
                         [Texto de apresentação]
                     </p>
+                    <pre>
+                        Texto texto texto texto texto texto texto texto texto texto text
+                         texto texto texto texto texto texto texto texto texto texto
+                          texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                           texto texto texto texto texto texto texto texto
+                            texto texto texto texto texto texto texto texto texto texto
+                    </pre>
                 </div>
             </article>
-            <footer id="rodape">
-                <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
-            </footer>
         </div>
+        <footer id="rodape">
+            <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
+        </footer>
         <div id="modal-rate-this" class="modal">
             <div class="modal-content-login">
                 <div class="modal-header">
