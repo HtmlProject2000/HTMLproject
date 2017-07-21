@@ -349,6 +349,8 @@ input[type=button]:hover {
     width:70%;
     height:100%;
     padding:30px;
+    position: relative;
+    z-index: 1;
 }
 
 .formulario li{
@@ -440,7 +442,7 @@ input[type=submit]:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 51;
     left: 0;
     top: 0;
     width: 100%;
@@ -473,7 +475,7 @@ input[type=submit]:hover {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 1s
+    animation-duration: 1s;
 }
 .close, .closel{
     color: #ffffff;
@@ -551,7 +553,9 @@ section#introducao-semBorda h3{
     left: 20%;
     border-style: groove;
     border-radius: 20px;
-    border-color: #ffc226
+    border-color: #ffc226;
+    z-index: 2;
+    margin: 10px;
 }
 
 .a{
@@ -565,7 +569,7 @@ section#introducao-semBorda h3{
     border-top-style: groove;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-color: #ffc226
+    border-color: #ffc226;
 }
 
 .tbl-form{
@@ -615,3 +619,27 @@ input[type=reset]:hover {
     margin-top: 6px;
     margin-bottom: 16px;
 }
+
+/* EDIT MY EVENT/*/
+.box-edit{
+    position:relative;
+}
+.btn-edit{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+/*END OF EDIT MY EVENT*/
+/*PAINEL DE RESULTADOS*/
+.conteiner-result-panel{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+/*END OF PAINEL DE RESULTADOS*/

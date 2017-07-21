@@ -5,9 +5,75 @@
     font-family:'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+/* NEW NAV BAR*/
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover> ul{
+    display: block;
+}
+
+nav{
+    margin: 0 auto;
+}
+
+nav ul{
+    position: relative;
+    list-style-type: none;
+    background-color: #069;
+    height: auto;
+    text-decoration: none;
+	text-transform:uppercase;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li.a{
+    display: block;
+}
+
+nav ul li.only:hover{
+    background-color: #036;
+}
+
+nav td a:hover{
+    background-color: #c9c9c9;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+nav td a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav li ul{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+nav table{
+    margin-left: -30px;
+}
 
 /*configuração perfeita do menu de navegação (por sendo usada só no header page)*/
-
 #ranking img{/*por enquanto inútil*/
 position:absolute;
 left:60px;
@@ -249,6 +315,7 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 /* The Modal */
 .modal {
     display: none;
@@ -513,5 +580,9 @@ div#name-site h1{
 .login-or-sign-in-box{
     padding: 14px 16px 14px 16px;
     position: relative;
-    
+}
+
+container-content{
+    position: relative;
+    z-index: 1;
 }

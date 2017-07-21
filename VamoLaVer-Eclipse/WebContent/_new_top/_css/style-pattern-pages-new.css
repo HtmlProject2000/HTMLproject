@@ -1,0 +1,389 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash');
+@font-face{
+    font-family:'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+/*configuração perfeita do menu de navegação (por sendo usada só no header page)*/
+/* NEW NAV BAR*/
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover> ul{
+    display: block;
+}
+
+nav{
+    margin: 0 auto;
+}
+
+nav ul{
+    position: relative;
+    list-style-type: none;
+    background-color: #069;
+    height: auto;
+    text-decoration: none;
+	text-transform:uppercase;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li.a{
+    display: block;
+}
+
+nav ul li.only:hover{
+    background-color: #036;
+}
+
+nav td a:hover{
+    background-color: #c9c9c9;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+nav td a{
+    position: relative;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav li ul{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+
+nav table{
+    margin-left: -30px;
+}
+
+#container-header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+}
+
+/*  para o limbo*/
+.navigation-bar{
+    position: relative;
+    list-style-type: none;
+    background-color: #069;
+    height: auto;
+    text-decoration: none;
+	text-transform:uppercase;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.navlink {
+    display: inline-block;
+}
+.navlink a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+.navlink a:hover, .dropdown:hover .dropbtn {
+    background-color: #036;
+}
+li.dropdown {
+    display: inline-block;
+    position: static;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*ATÉ AQUI*/
+
+#logo {
+    position:relative;
+    left:50px;
+    top:20px;
+    width: 500px;
+}
+
+#name-site {
+position:absolute;
+left:600px;
+top:40px;
+font-family: 'Ravi Prakash', cursive;
+}
+
+div#name-site h1{
+    font-size: 45pt;
+}
+
+#redes-sociais {
+    position:absolute;
+    right:40px;
+    top:30px;
+}
+
+.search-box {
+    width:200px;
+    padding: 14px 16px 14px 16px;
+}
+
+#txt-search-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: auto;
+    height: 30px;
+    text-align:center;
+}
+
+#pesquisar{
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    float: right;
+}
+
+#img-a{
+    width: 32px;
+    height: 32px;
+}
+
+.login-or-sign-in-box{
+    padding: 14px 16px 14px 16px;
+    position: relative;
+    
+}
+/*END OF NEW NAV BAR*/
+
+#ranking img{/*por enquanto inútil*/
+position:absolute;
+left:60px;
+top:490px;
+}
+
+.block-principal{
+    width: auto;
+    height: 100%;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
+    background-color: #ffffff;
+    /*margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading */
+    box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
+    /*padding: 10px 10px 100px 10px;*/
+    position:relative;
+}
+
+.container-content{
+    position: relative;
+    width:80%;
+    left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+footer#rodape{
+    clear: both;/*limpa a configuração dos 2 lados*/
+    border-top: 1px solid #606060;
+    position: relative;
+    width: 100%;
+}
+
+#ul1{
+    list-style: none;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+/* MODAL */
+.txts{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #23bf45;
+    -webkit-animation-name: anim-color-submit;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes anim-color-submit {
+    from {background-color: #0c6ac6;}
+    to {background-color: #23bf45;}
+}
+@keyframes anim-color-submit {
+    from {background-color: #0c6ac6;}
+    to {background-color: #23bf45;}
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+.modal-content-login {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+.close, .closel{
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus, .closel:hover,
+.closel:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #00c4fe;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+.modal-footer {
+    height: 60px;
+    padding: 2px 16px;
+    background-color: #00c4fe;
+    color: white;
+}
+
+input[type=reset] {
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=reset]:hover {
+    background-color: red;
+    -webkit-animation-name: anim-color;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes anim-color {
+    from {background-color: #0c6ac6;}
+    to {background-color: red;}
+}
+
+@keyframes anim-color {
+    from {background-color: #0c6ac6;}
+    to {background-color: red;}
+}
+
+#date-content{
+    width: 100%
+}
+
+.boxes{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+                                /* navigation bar test */
