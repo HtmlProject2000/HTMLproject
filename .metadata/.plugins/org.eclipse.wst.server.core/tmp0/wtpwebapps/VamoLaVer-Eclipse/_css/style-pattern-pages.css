@@ -5,29 +5,80 @@
     font-family:'FonteLogo';
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
+/* NEW NAV BAR*/
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover> ul{
+    display: block;
+}
+
+nav{
+    margin: 0 auto;
+}
+
+nav ul{
+    position: relative;
+    list-style-type: none;
+    background-color: #069;
+    height: auto;
+    text-decoration: none;
+	text-transform:uppercase;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li.a{
+    display: block;
+}
+
+nav ul li.only:hover{
+    background-color: #036;
+}
+
+nav td a:hover{
+    background-color: #c9c9c9;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    text-decoration: none;
+}
+
+nav td a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav li ul{
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+nav table{
+    margin-left: -30px;
+}
 
 /*configuração perfeita do menu de navegação (por sendo usada só no header page)*/
-
 #ranking img{/*por enquanto inútil*/
 position:absolute;
 left:60px;
 top:490px;
 }
-
-/*#fundo-cabecalho {background-color:skyblue;
-height:200px;
-text-align:center;
-}
-
-#cabecalho {width:100%;
-background-color:#069;
-height:55px;
-}
-
-.container-top {width:100%;
-height:300px;
-background-color:#CF0;
-}*/
 
 .block-principal{
     width: auto;
@@ -39,49 +90,6 @@ background-color:#CF0;
     position:relative;
 }
 
-/*.palavrasJogadasAoVento{
-    position: relative;
-    width: 50%;
-}*/
-
-/*.palavrasJogadasAoVento h1{
-    padding-top: 90px;
-    font-style: italic;
-    text-decoration: underline;
-    text-align: center;
-}*/
-
-/*.palavrasJogadasAoVento p{
-    text-align: justify;
-    text-indent: 50px;
-}*/
-
-/*.first-line-navigation{
-    width:100%;
-    top:0px;
-    left:0px;
-    opacity:1;
-
-}*/
-
-/*section#introducao{
-    /*width: 100%;*
-    float:left;
-    padding: 5px 10px 5px 5px; /*cima direita baixo esqueda*
-    margin: 10px 10px 10px 10px ;
-    position: relative;
-}*/
-
-/*aside#artigo-home{
-   display: block;
-    width: 550px;
-    background-color: Skyblue;
-    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    position: relative;
-}*/
-
 footer#rodape{
     clear: both;/*limpa a configuração dos 2 lados*/
     border-top: 1px solid #606060;
@@ -89,126 +97,12 @@ footer#rodape{
     width: 100%;
 }
 
-/*.right-top-menu{
-    display:block;
-    background: linear-gradient(skyblue,DodgerBlue);
-    padding: 10px 10px 10px;
-    position:relative;
-    top:0px;
-    opacity:1;
-    height: 50px;
-}*/
-
-/*.right-top-menu li{
-    display:inline-block;
-}*/
-
 #ul1{
     list-style: none;
     position:absolute;
     top:0px;
     right:0px;
 }
-
-/*#second-menu{
-    position:absolute;
-    width: 800px;
-    top:211px;
-    left: 11px;
-	overflow:hidden; 
-}*/
-
-/*#nav-variant a{    
-    text-decoration: none;
-    padding:15px;
-	text-transform:uppercase;
-	color:#FFF;
-	font-family:Arial, Helvetica, sans-serif;	
-}*/
-
-/*#nav-variant li{
-    display:inline-block;
-	padding:15px;
-	background-color:#069;
-	text-align:center;	 
-}*/
-
-/*#nav-variant li:hover{background-color:#036;}*/
-
-/* custom search paage*/
-
-/*#show-conteiner-options{
-     position:fixed;
-    top:0;
-    right:0;
-    height:100%;
-    width:100px;
-}*/
-
-/*#show-conteiner-options:hover .conteiner-options{
-    width:25%;
-}*/
-
-/*#show-conteiner-options .conteiner-options{
-    position:fixed;
-    top:0;
-    right:0;
-    height:100%;
-    width:0px;
-    overflow-x: hidden; /* Disable horizontal scroll 
-    transition: 0.5s;
-    background-color:#0c6ac6;
-}*/
-
-/*.formulario{
-    /*display:block;
-    /*float:right;*
-    width:70%;
-    padding:30px;
-}*/
-
-/*.formulario li{
-   padding-bottom: 3px;
-}*/
-
-/*.panel{
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    transition:.5s;
-}
-
-
-
-.accordion{
-    position: relative;
-
-}*/
-
-        /*CONTAC-US */
-/* SIDE-NAV  of contact-us*/
-
-/*#side-nav-id a{
-    position: absolute;
-    top: 85%;
-    left: -100px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 90px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-}
-
-#side-nav-id a:hover{
-    left: 0;
-}
-
-#btn-sidenav {
-    top: 20px;
-    background-color: #069;
-}*/
 
 /* MODAL */
 .txts{
@@ -221,10 +115,12 @@ footer#rodape{
     margin-bottom: 16px;
     resize: vertical;
 }
-input[type=submit] {
+.submit-a{
     background-color: #0c6ac6;
     color: white;
     padding: 12px 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -249,6 +145,7 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
 /* The Modal */
 .modal {
     display: none;
@@ -326,40 +223,12 @@ input[type=submit]:hover {
     color: white;
 }
 
-/* END of contat-us */
-/*section#introducao-semBorda{
-    display: block;
-    width: 50%;
-    padding: 35px 10px 5px 5px; /*cima direita baixo esqueda
-    margin: 10px 10px 10px 10px ;
-    position: relative;
-}
-
-section#introducao-semBorda h1{
-    font-family:'FonteLogo',sans-serif;
-    font-size: 30pt;
-    color: #606060;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.5); 
-    padding: 0px; 
-    margin-bottom: 0px;
-    font-weight: 200;
-}
-section#introducao-semBorda h3{
-    font-family: 'Titillium Web', sans-serif;
-    color:#888888;
-    font-size: 15pt;
-    padding: 0px; 
-    margin-top: 0px;
-}*/
-/* NEW ENVET */
-/*.form-add-new-event {
-    width: 30%;
-}*/
-
-input[type=reset] {
+.reset-a{
     background-color: #0c6ac6;
     color: white;
     padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -513,5 +382,29 @@ div#name-site h1{
 .login-or-sign-in-box{
     padding: 14px 16px 14px 16px;
     position: relative;
-    
 }
+
+container-content{
+    position: relative;
+    width: auto;
+}
+
+.submit-b{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-b{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+

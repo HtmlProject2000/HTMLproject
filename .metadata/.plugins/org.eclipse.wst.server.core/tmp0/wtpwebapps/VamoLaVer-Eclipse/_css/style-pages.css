@@ -6,64 +6,6 @@
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
-/*configuração vagabunda do menu de navegação (por sendo usada só na home page)*/
-/*#logo {
-position:absolute;
-left:50px;
-top:40px;
-}
-
-#name-site {
-position:absolute;
-left:550px;
-top:60px;
-font-family: 'Ravi Prakash', cursive;
-}
-div#name-site h1{
-    font-size: 45pt;
-}
-
-#redes-sociais {position:absolute;
-right:40px;
-top:30px;
-}
-
-#ranking img{
-position:absolute;
-left:60px;
-top:490px;
-}
-
-#pesquisar {position:absolute;
-right:-40px;
-top:-3px;
-}
-
-#fundo-cabecalho {background-color:skyblue;
-height:200px;
-text-align:center;
-}
-
-#cabecalho {width:100%;
-background-color:#069;
-
-height:55px;
-
-}
-
-.container-top {width:100%;
-height:300px;
-background-color:#CF0;
-}
-.block-principal{
-    width: 1250px;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
-    /*height:100%;
-    background-color: #ffffff;
-    margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading 
-    box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra 
-    padding: 10px 10px 100px 10px;
-}*/
-
 .palavrasJogadasAoVento h1{
     padding-top: 90px;
     font-style: italic;
@@ -75,213 +17,37 @@ background-color:#CF0;
     text-indent: 50px;
 }
 
-/*.first-line-navigation{
-    width:100%;
-    top:0px;
-    left:0px;
-    opacity:1;
-
-}*/
-
 section#introducao{
     position: relative;
-    /*display: block;*/
-    
     width: 600px;
-    /*float:left;*/
-    /*border-right:1px solid #606060; /* tamanho tipo e cor*/
-    /*padding: 5px 10px 5px 5px; /*cima direita baixo esqueda*/
     margin: 10px 50px 10px 50px ;
 }
 
-/*
-.login-or-sign-in-box img{
-    position:absolute;
-    top:217px;
-    right:25px;
-}*/
-
 aside#artigo-home{
-    /*display: block;*/
     position: absolute;
     left: 50%;
     top:330px;
     width: 550px;
-    /*float: right;*/
     background-color: Skyblue;
     box-shadow: 3px 3px 3px rgba(0,0,0,.5);
     padding-left: 20px;
     padding-right: 20px;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
-
 }
+
 .in-line{
     display: inline;
 }
 
-
-/*
-footer#rodape{
-    clear: both;/*limpa a configuração dos 2 lados
-    border-top: 1px solid #606060;
-}
-*/
-/*
-.right-top-menu{
-    display:block;
-    background: linear-gradient(skyblue,DodgerBlue);
-    padding: 10px 10px 10px;
-    position:relative;
-    top:0px;
-    opacity:1;
-    height: 50px;
-}
-
-.right-top-menu li{
-    display:inline-block;
-}
-#ul1{
-    list-style: none;
-    position:absolute;
-    top:0px;
-    right:0px;
-}*/
-
-/*DROPIDOUN*/
-/*
-.dropbtn {
-    background: linear-gradient(skyblue,dodgerblue);
-    padding: 16px;
-    font-size: 15px;
-    color:white;
-    border: none;
-    cursor: pointer;
-    top:0px;
-    height: 50px;
-    
-    
-}
-
-.dropDown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: skyblue;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-color: black;
-    border-radius: 10px;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropDown:hover .dropdown-content {
-    display: block;
-}
-
-.dropDown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-
-/*FIM DO DROPIDOUM*/
-
-/*DROPIDOUM 2*/
-/*
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    background-color: skyblue;
-    min-width: 150px;
-    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-color: black;
-    border-radius: 10px;
-}
-
-.dropdown-content2 a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content2 img {    
-    padding: 12px 12px;
-}
-
-.dropdown-content2 a:hover {
-    background-color: white;
-    color: black;
-}
-
-.dropDown:hover .dropdown-content2 {
-    display: block;
-    color: black;
-}
-
-.dropDown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-/*FIM DO DROPIDOUM 2*/
-/*
-.search-box {
-    position:absolute;
-    right:120px;
-    top:222px;
-    
-}
-#txt-search-box {height:22px;
-width:225px;
-}
-
-#second-menu{
-    position:absolute;
-    width: 800px;
-    top:211px;
-    left: 11px;
-	overflow:hidden; 
-    
-}
-
-#nav-variant a{    
-    text-decoration: none;
-    padding:15px;
-	text-transform:uppercase;
-	color:#FFF;
-	font-family:Arial, Helvetica, sans-serif;
-	
-
-}
-
-#nav-variant li{
-    display:inline-block;
-	padding:15px;
-	background-color:#069;
-	text-align:center;
-	 
-}
-
-#nav-variant li:hover{background-color:#036;}
-
-
-
-
 /* custom search paage*/
+
+.div-c{
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 25%;
+}
 
 input[type=button] {
     background-color: #0c6ac6;
@@ -291,15 +57,18 @@ input[type=button] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type=button]:hover {
     background-color: #23bf45;
     -webkit-animation-name: anim-color-button;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1s;
 }
+
 @-webkit-keyframes anim-color-button {
     from {background-color: #0c6ac6;}
     to {background-color: #0c6a6a;}
 }
+
 .conteiner-options{
    display:block;
     float:right;
@@ -345,10 +114,11 @@ input[type=button]:hover {
 
 .formulario{
    display:block;
-    /*float:left;*/
     width:70%;
     height:100%;
     padding:30px;
+    position: relative;
+    z-index: 1;
 }
 
 .formulario li{
@@ -361,16 +131,15 @@ input[type=button]:hover {
     background-color: white;
     transition:.5s;
 }
+
 .in-panel-a-s{
     list-style-type: none;
 }
-
 
 .accordion{
     position: relative;
 
 }
-
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/
@@ -390,10 +159,11 @@ input[type=button]:hover {
 #side-nav-id a:hover{
     left: 0;
 }
+
 #btn-sidenav {
     top: 20px;
-    /*background-color: #ffc226;*/
 }
+
 /* MODAL */
 
 .txts{
@@ -406,30 +176,6 @@ input[type=button]:hover {
     margin-bottom: 16px;
     resize: vertical;
 }
-input[type=submit] {
-    background-color: #0c6ac6;
-    color: white;
-    padding: 12px 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #23bf45;
-    -webkit-animation-name: anim-color-submit;
-    -webkit-animation-duration: 2s;
-}
-@-webkit-keyframes anim-color-submit {
-    from {background-color: #0c6ac6;}
-    to {background-color: #23bf45;}
-}
-@keyframes anim-color-submit {
-    from {background-color: #0c6ac6;}
-    to {background-color: #23bf45;}
-}
 
 .container {
     border-radius: 5px;
@@ -440,7 +186,7 @@ input[type=submit]:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 51;
     left: 0;
     top: 0;
     width: 100%;
@@ -473,7 +219,7 @@ input[type=submit]:hover {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 1s
+    animation-duration: 1s;
 }
 .close, .closel{
     color: #ffffff;
@@ -489,29 +235,7 @@ input[type=submit]:hover {
     text-decoration: none;
     cursor: pointer;
 }
-/* Add Animation 
-@-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0} 
-    to {top: 0; opacity: 1}
-}
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #00c4fe;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-.modal-footer {
-    height: 60px;
-    padding: 2px 16px;
-    background-color: #00c4fe;
-    color: white;
-}*/
 .presentation{
     margin-left: 100px;
     margin-right: 100px;
@@ -548,15 +272,18 @@ section#introducao-semBorda h3{
 #div-a{
     position: relative;
     width: 50%;
+    height: auto;
     left: 20%;
     border-style: groove;
     border-radius: 20px;
-    border-color: #ffc226
+    border-color: #ffc226;
+    margin: 10px;
 }
 
 .a{
     position: relative;
     margin-left: 20px;
+    z-index: 1;
 }
 
 .form-add-new-event {
@@ -565,41 +292,13 @@ section#introducao-semBorda h3{
     border-top-style: groove;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border-color: #ffc226
+    border-color: #ffc226;
 }
 
 .tbl-form{
     position: relative;
     width: 80%;
     left: 10%;
-}
-
-input[type=reset] {
-    background-color: #0c6ac6;
-    color: white;
-    padding: 12px 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=reset]:hover {
-    background-color: red;
-    -webkit-animation-name: anim-color;
-    -webkit-animation-duration: 2s;
-}
-
-@-webkit-keyframes anim-color {
-    from {background-color: #0c6ac6;}
-    to {background-color: red;}
-}
-
-@keyframes anim-color {
-    from {background-color: #0c6ac6;}
-    to {background-color: red;}
 }
 
 #date-content{
@@ -615,3 +314,87 @@ input[type=reset]:hover {
     margin-top: 6px;
     margin-bottom: 16px;
 }
+
+/* EDIT MY EVENT/*/
+
+.box-edit{
+    position:relative;
+}
+
+.btn-edit{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button[class=btn-edit]:hover {
+    background-color: orange;
+    -webkit-animation-name: anim-color-edit;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes anim-color-edit {
+    from {background-color: #0c6ac6;}
+    to {background-color: orange;}
+}
+
+@keyframes anim-color-edit {
+    from {background-color: #0c6ac6;}
+    to {background-color: orange;}
+}
+/*END OF EDIT MY EVENT*/
+/*PAINEL DE RESULTADOS*/
+.conteiner-result-panel{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+/*END OF PAINEL DE RESULTADOS*/
+/*SING IN*/
+
+/*END OF SING IN*/
+/*REMMENBER PASSWORD*/
+.div-b{
+    position: relative;
+    width: 30%;
+    left: 35%;
+}
+
+#btn-recovery-pass{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-recovery-pass:hover{
+    background-color: forestgreen;
+    -webkit-animation-name:btn-recovery-anim;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes btn-recovery-anim{
+    from{background-color: #0c6ac6}
+    to{
+        background-color: forestgreen;
+    }
+}
+
+@keyframes btn-recovery-anim{
+   from{background-color: #0c6ac6}
+    to{background-color: forestgreen;} 
+}
+/*END OF REMMENBER PASSWORD*/
+/*SING IN*/
+
+/*END OF NEW USER*/
