@@ -50,7 +50,7 @@
                                             <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
                                         </td>
                                         <td>
-                                            <a href="favorite-events.html">Meus Eventos Favoritos</a>
+                                            <a href="favorite-events.html">Eventos Favoritos</a>
                                         </td>
                                     </tr>
                                 <tr>
@@ -87,21 +87,14 @@
             <div class="conteiner-options">
                 <nav class="nav-options">
                     <table class="nav-ul-options">
-                        <tr>
-                            <td><label for="btn-alphabetical-order">Ordem Afabética</label></td>
-                            <td><input type="button" id="btn-alphabetical-order" value="↑ or ↓"></td></tr>
-
-
-                            <tr><td><label for="btn-chrnological-order">Ordem Cronológica</label></td>
-                            <td><input type="button" id="btn-chrnological-order" value="↑ or ↓"></td></tr>
-
-
-                            <tr><td><label for="tbn-increscent-decrescent-order">Ordem de Qtd. prevista de Visitantes</label></td>
-                            <td><input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓"></td></tr>
-
-                            <tr><td><label for="checkbox-my-events">Meus eventos</label></td>
-                            <td><input type="checkbox" id="checkbox-my-events" value="Meus"></td></tr>
-
+                        <tr><td><label for="btn-alphabetical-order">Ordem Afabética</label></td>
+                        <td><input type="button" id="btn-alphabetical-order" value="↑ or ↓"></td></tr>
+                        <tr><td><label for="btn-chrnological-order">Ordem Cronológica</label></td>
+                        <td><input type="button" id="btn-chrnological-order" value="↑ or ↓"></td></tr>
+                        <tr><td><label for="tbn-increscent-decrescent-order">Ordem de Qtd. prevista de Visitantes</label></td>
+                        <td><input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓"></td></tr>
+                        <tr><td><label for="checkbox-my-events">Meus eventos</label></td>
+                        <td><input type="checkbox" id="checkbox-my-events" value="Meus"></td></tr>
                     </table>
                 </nav>
             </div>
@@ -142,35 +135,20 @@
                 <div>
                 <input type="submit" class="submit-b" id="tbn-custon-search-go" value="Buscar"/>
                 <input type="reset" class="reset-b" id="btn-custon-search-eraser" value="limpar">
-
                 <input type="button" class = "accordion" value="Busca Avançada"><!-- AO CLICKAR NO BOTÃO SERÁ ABERTO UMA ÁERA COMPLEMENTAR DO FORMULÁRIO PARA FINS AVANÇADOS DE BUSCA-->
                 <div class = "panel-a-s">
                     <ul class="in-panel-a-s">
-                        <h2>Busca Avançada</h2>
+                        <h2>Avançados</h2>
                         <li>
                             Local
-                                <ul class="in-panel-a-s">
-    <!--
-                                            <li>
-                                                <label for="select-advanced-search-estado">Estado</label>
-                                                <select id="select-advanced-search">
-                                                    <option value="none">Vazio</option>
-                                                </select>
-                                            </li>
-                                            <li>
-                                                <label for="select-advanced-search-cidade">Cidade</label>
-                                                <select id="select-advanced-search-cidade">
-                                                    <option value="none">Vazio</option>
-                                                </select>
-                                            </li>
-    -->
-                                    <li>
-                                        <label for="select-advanced-search-bairro">Bairro</label>
-                                        <select id="select-advanced-search-bairro" class="boxes">
-                                            <option value="none">vazio</option>
-                                        </select>
-                                    </li>
-                                </ul>
+                            <ul class="in-panel-a-s">
+                                <li>
+                                    <label for="select-advanced-search-bairro">Bairro</label>
+                                    <select id="select-advanced-search-bairro" class="boxes">
+                                        <option value="none">vazio</option>
+                                    </select>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <label for="textarea-descrition-search">Descrição</label>
@@ -201,7 +179,7 @@
                             <input type="text" class="txts" id="login-username-email" size="30">
                             <label for="login-user-password">Senha</label>
                             <input type="password" class="txts" id="login-user-password" size="30">
-                            <input type="submit" id="btn-login-entrar" value="Entrar">
+                            <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>
                     </div>
@@ -213,7 +191,6 @@
         <script>
             var acc = document.getElementsByClassName("accordion");
             var i;
-
             for (i = 0; i < acc.length; i++) {
                 acc[i].onclick = function(){
                     this.classList.toggle("active");

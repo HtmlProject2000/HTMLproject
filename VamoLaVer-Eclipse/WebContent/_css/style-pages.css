@@ -59,7 +59,7 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-    background-color: #23bf45;
+    background-color: #0c6a6a;
     -webkit-animation-name: anim-color-button;
     -webkit-animation-duration: 1s;
 }
@@ -138,7 +138,6 @@ input[type=button]:hover {
 
 .accordion{
     position: relative;
-
 }
 
         /*CONTAC-US */
@@ -149,12 +148,13 @@ input[type=button]:hover {
     left: -100px;
     transition: 0.3s;
     padding: 15px;
-    width: 90px;
+    width: 100px;
     text-decoration: none;
     font-size: 20px;
     color: white;
     border-radius: 0 5px 5px 0;
     background-color: #ffc226;
+    z-index: 3;
 }
 #side-nav-id a:hover{
     left: 0;
@@ -163,6 +163,7 @@ input[type=button]:hover {
 #btn-sidenav {
     top: 20px;
 }
+
 
 /* MODAL */
 
@@ -319,6 +320,7 @@ section#introducao-semBorda h3{
 
 .box-edit{
     position:relative;
+    
 }
 
 .btn-edit{
@@ -326,7 +328,6 @@ section#introducao-semBorda h3{
     color: white;
     padding: 12px 20px;
     margin-right: 20px;
-    margin-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -349,11 +350,14 @@ button[class=btn-edit]:hover {
     to {background-color: orange;}
 }
 /*END OF EDIT MY EVENT*/
+
 /*PAINEL DE RESULTADOS*/
 .conteiner-result-panel{
     position: relative;
     width: 50%;
     left: 25%;
+    border-radius: 15px;
+    background-color: darkgrey;
 }
 /*END OF PAINEL DE RESULTADOS*/
 /*SING IN*/
