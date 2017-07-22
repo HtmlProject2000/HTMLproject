@@ -1,0 +1,16 @@
+package bdConnect_e_DAOs;
+
+import java.sql.*;
+
+public class BDConnect {
+
+	public String driver= "com.mysql.jdbc.Driver";
+	public String url = "";
+	public String user;
+	public String password;
+	public BDConnect(){
+		Class.forNmar(driver);
+		return DriverManager.getConnection(url,user,password)
+	}
+	
+}
