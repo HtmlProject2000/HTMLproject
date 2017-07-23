@@ -8,6 +8,7 @@ public class BDConnect {
 	public String url = "jdbc:mysql://localhost:3306/projeto1bim2017";
 	public String user = "root";
 	public String password = "t00r";
+	
 	public BDConnect(){
 	
 	}

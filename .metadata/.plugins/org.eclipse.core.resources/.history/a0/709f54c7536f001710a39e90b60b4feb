@@ -1,0 +1,87 @@
+package bdConnect_e_DAOs;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class signInVerificacao
+ */
+@WebServlet("/signInVerificacao")
+public class signInVerificacao extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public signInVerificacao() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html;charset=UTF-8");
+		String senha[] = request.getParameterValues("campoUsuSenha");
+		String email[] = request.getParameterValues("campoUsuEmail");
+		String nome = request.getParameter("campoUsuNome");
+		boolean somethingWrong[] = new boolean[4];
+		String url = "/usuarioDao";
+		for (String s : senha) {
+			if (s.equals("")) {
+				somethingWrong[0] = true;
+				break;
+			}
+		}
+
+		for (String s : email) {
+			if (s.equals("")) {
+				somethingWrong[1] = true;
+				break;
+			}
+		}
+
+		if (!email[0].equals(email[1])) {
+			somethingWrong[2] = true;
+		}
+
+		if (!senha[0].equals(senha[1])) {
+			somethingWrong[3] = true;
+		}
+
+		for (boolean b : somethingWrong) {
+			if (b) {
+				request.setAttribute("sthWrong", somethingWrong);
+				url= "/signInError.jsp";
+				
+			}else{
+				request.setAttribute("sthWrong", somethingWrong);
+			}
+		}
+		
+		
+		RequestDispatcher d = getServletContext().getRequestDispatcher(url);
+		d.forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

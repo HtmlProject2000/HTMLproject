@@ -28,5 +28,6 @@
 		}
 	}
 	%>
+	<a href = 'sing-in.html'> <input type = "button" value = "Voltar"></a>
 </body>
 </html>

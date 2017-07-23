@@ -1,0 +1,12 @@
+127.0.0.1 - - [23/Jul/2017:00:04:59 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:05:00 -0400] "GET /VamoLaVer-Eclipse/sing-in.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:05:00 -0400] "GET /VamoLaVer-Eclipse/_css/style-pages.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:05:36 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=&campoUsuEmail=&campoUsuEmail=&campoUsuSenha=&campoUsuSenha= HTTP/1.1" 200 6571
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:05:58 -0400] "GET /VamoLaVer-Eclipse/sing-in.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:05:58 -0400] "GET /VamoLaVer-Eclipse/_css/style-pages.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:06:15 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=&campoUsuEmail=&campoUsuEmail=&campoUsuSenha=&campoUsuSenha= HTTP/1.1" 200 6571
+127.0.0.1 - - [23/Jul/2017:00:09:04 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:09:11 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=&campoUsuEmail=&campoUsuEmail=&campoUsuSenha=&campoUsuSenha= HTTP/1.1" 304 -
+127.0.0.1 - - [23/Jul/2017:00:16:03 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:16:12 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=&campoUsuEmail=&campoUsuEmail=&campoUsuSenha=&campoUsuSenha= HTTP/1.1" 200 339
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:00:16:49 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=&campoUsuEmail=&campoUsuEmail=&campoUsuSenha=&campoUsuSenha= HTTP/1.1" 200 444
