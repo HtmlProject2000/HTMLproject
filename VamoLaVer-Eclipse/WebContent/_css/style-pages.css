@@ -169,11 +169,15 @@ tr h4{
 
 .accordion{
     position: relative;
-
 }
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/
+#side-nav{
+    position: absolute;
+    z-index: 3;
+}
+
 #side-nav-id a{
     position: absolute;
     top: 83%;
@@ -186,13 +190,11 @@ tr h4{
     color: white;
     border-radius: 0 5px 5px 0;
     background-color: #ffc226;
+    z-index: 3;
 }
 #side-nav-id a:hover{
     left: 0;
-}
-
-#btn-sidenav {
-    top: 20px;
+    z-index: 3;
 }
 
 /* MODAL */

@@ -84,9 +84,7 @@ top:490px;
     width: auto;
     height: 100%;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
     background-color: #ffffff;
-    /*margin: 50px auto 50px auto;/*cima direita baixo esquerda,pode tbm ser usada np pading */
     box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
-    /*padding: 10px 10px 100px 10px;*/
     position:relative;
 }
 
@@ -95,6 +93,9 @@ footer#rodape{
     border-top: 1px solid #606060;
     position: relative;
     width: 100%;
+    margin-top: 10px;
+    background-color: #4c4f4e;
+    color: azure;
 }
 
 #ul1{
