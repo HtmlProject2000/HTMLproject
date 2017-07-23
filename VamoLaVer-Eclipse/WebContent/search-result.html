@@ -7,7 +7,7 @@
         <link rel = "stylesheet" href="_css/style-pages.css"/>
         <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
     </head>
-    <body >
+    <body class="block-principal">
         <div id="conteiner-header">
             <div id="logo">
                 <img src="_imagens/logo.png">
@@ -86,64 +86,8 @@
                 </ul>
             </nav>
         </div>
-        <div class="container-options">
-            <div class="side-form">
-            <h3>
-                Opções de exibição
-            </h3>
-                <form id="form-options-search-result">
-                    <table>
-                        <tr>
-                            <h4>
-                                Ordem Alfabética do Eventos
-                            </h4>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="radio-oa-az">A-Z</label>
-                                <input type="radio" id="radio-oa-az"/>
-                            </td>
-                            <td>
-                                <label for="radio-oa-za">Z-A</label>
-                                <input type="radio" id="radio-oa-za"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <h4>
-                                Data Previstas Para Eventos
-                            </h4>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="radio-dtpev-cres">Crescente</label>
-                                <input type="radio" id="radio-dtpev-cre"/>
-                            </td>
-                            <td>
-                                <label for="radio-dtpev-dec">Decrescente</label>
-                                <input type="radio" id="radio-dtpev-dec"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <h4>Qtd. prevista de visitantes</h4>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="radio-qtd-cre">Crescente</label>
-                                <input type="radio" id="radio-qtd-cre"/>
-                            </td>
-                            <td>
-                                <label for="radio-qtd-dec">Decrescente</label>
-                                <input type="radio" id="radio-qtd-dec"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <label for="check-only-my"><h4>Somente meus Eventos</h4></label>
-                            <input type="checkbox" id="check-only-my"/>
-                        </tr>
-                    </table>
-                </form>
-            </div>
-            
+        <div  class="side-nav-op">
+            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">Opções de organização</a>
         </div>
         <div class="container-content">
             <article class="presentation">
@@ -189,6 +133,84 @@
                             <input type="password" class="txts" id="login-user-password" size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div id="modal-options" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closeop">&times;</span>
+                    <h3>Opções de exibição</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="div-c">
+                        <form id="form-options-search-result" class="form-options">
+                            <table>
+                                <tr>
+                                    <td  class="titles" colspan="2">
+                                        Ordem Alfabética do Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-oa-az">A-Z</label>
+                                        <input type="radio" id="radio-oa-az"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-oa-za">Z-A</label>
+                                        <input type="radio" id="radio-oa-za"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Data Previstas Para Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-dtpev-cres">Crescente</label>
+                                        <input type="radio" id="radio-dtpev-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-dtpev-dec">Decrescente</label>
+                                        <input type="radio" id="radio-dtpev-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Qtd. prevista de visitantes
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-qtd-cre">Crescente</label>
+                                        <input type="radio" id="radio-qtd-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-qtd-dec">Decrescente</label>
+                                        <input type="radio" id="radio-qtd-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Mais opções
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="check-only-my">Somente meus Eventos</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="check-only-my"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="submit" class="submit-b" id="btn-op-ok" value="OK">
+                            <input type="reset" class="reset-b" id="btn-op-eraser" value="limpar">
                         </form>
                     </div>
                 </div>

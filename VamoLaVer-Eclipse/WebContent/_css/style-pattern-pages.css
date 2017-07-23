@@ -68,7 +68,7 @@ nav td a:hover{
 nav li ul{
     position: absolute;
     background-color: #f9f9f9;
-    min-width: auto;
+    width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 99;
 }
@@ -79,17 +79,18 @@ nav table{
 
 /*configuração perfeita do menu de navegação (por sendo usada só no header page)*/
 #ranking img{/*por enquanto inútil*/
-position:absolute;
-left:60px;
-top:490px;
+    position:absolute;
+    left:60px;
+    top:490px;
 }
 
 .block-principal{
-    width: auto;
+    width: 100%;
     height: 100%;/*altera a delimitação do conteudo do site onde estar o div, menos o menu ja que estar em posição absoluta.*/
     background-color: #ffffff;
-    box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
+    /*box-shadow:0px 0px 10px rgba(0,0,0,.5); /*descolamentoLateral delocamentoVestical espalhamentoDaSombra corDaSombra */
     position:relative;
+    margin: 0;
 }
 
 footer#rodape{
@@ -169,19 +170,7 @@ input[type=submit]:hover {
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
 }
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 1s
-}
+
 .modal-content-login {
     position: relative;
     background-color: #fefefe;
@@ -195,7 +184,7 @@ input[type=submit]:hover {
     animation-name: animatetop;
     animation-duration: 1s
 }
-.close, .closel{
+.close, .closel, .closeop{
     color: #ffffff;
     float: right;
     font-size: 28px;
@@ -225,7 +214,10 @@ input[type=submit]:hover {
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
+
 .modal-footer {
     height: 60px;
     padding: 2px 16px;
@@ -407,7 +399,7 @@ div#name-site h1{
 
 container-content{
     position: relative;
-    width: auto;
+    width: 100%;
 }
 
 /*BUTTONS CLASSES*/

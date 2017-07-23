@@ -86,33 +86,10 @@ tr h4{
     text-align: center;
 }
 
-.container-options h3{
-    text-align: center;
-}
-
-.container-options .side-form{
-    position: absolute;
-    top: 500px;
-    right: -460px;
-    transition: 0.3s;
-   
-    width: 500px;
-    
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    background-color: #ffc226;
-}
-.container-options .side-form:hover{
-    right: -10;
-}
 /*END OF NEW NAV OPTIONS*/
 .container-options{
-    position:absolute;
-    right: 50px;
-    display:block;
-    float:right;
-    height:100%;
+    position:relative;
+    height:auto;
     width:auto;
 }
 
@@ -226,7 +203,7 @@ tr h4{
     background-color: #f2f2f2;
     padding: 20px;
 }
-/* The Modal */
+/* The Modals */
 .modal {
     display: none;
     position: fixed;
@@ -280,20 +257,33 @@ tr h4{
     cursor: pointer;
 }
 
+
+/*END MODALS*/
+
 .presentation{
     margin-left: 100px;
     margin-right: 100px;
 }
 
 /* END of contat-us */
+/*PONTOS TURISTICOS*/
+iframe#frame-spec {
+    position: relative;
+    width: 100px;
+}
+
 section#introducao-semBorda{
+    position: relative;
     display: block;
-    width: 1000px;
-    /*float:left;*/
+    width: 80%;
+    left: 10%;
+    /*float:left;*
     padding: 35px 10px 5px 5px; /*cima direita baixo esqueda*/
-    margin: 10px 100px 10px 100px ;
+    /*margin: 10px 100px 10px 100px ;*/
+    
 
 }
+
 section#introducao-semBorda h1{
     font-family:'FonteLogo',sans-serif;
     font-size: 30pt;
@@ -303,6 +293,7 @@ section#introducao-semBorda h1{
     margin-bottom: 0px;
     font-weight: 200;
 }
+
 section#introducao-semBorda h3{
     font-family: 'Titillium Web', sans-serif;
     color:#888888;
@@ -310,6 +301,8 @@ section#introducao-semBorda h3{
     padding: 0px; 
     margin-top: 0px;
 }
+
+/*END OF PONTOS TURISTICOS*/
 
 /* NEW EveNVET */
 
@@ -341,7 +334,7 @@ section#introducao-semBorda h3{
 
 .tbl-form{
     position: relative;
-    width: 80%;
+    width:auto;
     left: 10%;
 }
 
@@ -408,6 +401,7 @@ button[class=btn-edit]:hover {
     position: relative;
     width: 30%;
     left: 35%;
+    height: auto;
 }
 
 #btn-recovery-pass{
@@ -440,5 +434,41 @@ button[class=btn-edit]:hover {
 }
 /*END OF REMMENBER PASSWORD*/
 /*SING IN*/
-
+#form-add-new-usr{
+    position: relative;
+    height: auto;
+    
+}
 /*END OF NEW USER*/
+/*SEARCH RESULT*/
+.form-options table{
+    position: relative;
+    width: auto;
+    left: 10%;
+}
+
+td.titles{
+    background-color: honeydew;
+    text-align: center;
+    font-size: 19px;
+}
+
+.side-nav-op{
+    position: absolute;
+    top: 50%;
+}
+
+.side-nav-op a{
+    position: absolute;
+    left:1250px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #ffc226;
+}
+/*END OF SEACHR RESULT*/
