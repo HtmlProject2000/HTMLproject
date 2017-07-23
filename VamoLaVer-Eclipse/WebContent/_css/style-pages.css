@@ -69,11 +69,40 @@ input[type=button]:hover {
     to {background-color: #0c6a6a;}
 }
 
-.conteiner-options{
-   display:block;
+/*NAV OPTIONS*/
+/*NEW NAV OPTIONS*/
+tr h4{
+    text-align: center;
+}
+
+.container-options h3{
+    text-align: center;
+}
+
+.container-options .side-form{
+    position: absolute;
+    top: 500px;
+    right: -460px;
+    transition: 0.3s;
+   
+    width: 500px;
+    
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffc226;
+}
+.container-options .side-form:hover{
+    right: -10;
+}
+/*END OF NEW NAV OPTIONS*/
+.container-options{
+    position:absolute;
+    right: 50px;
+    display:block;
     float:right;
     height:100%;
-    width:100px;
+    width:auto;
 }
 
 .conteiner-options:hover .nav-options{
@@ -111,6 +140,8 @@ input[type=button]:hover {
 .nav-options table td input:hover{
     color: dodgerblue;
 }
+
+/*END OF NAV OPTIONS*/
 
 .formulario{
    display:block;
