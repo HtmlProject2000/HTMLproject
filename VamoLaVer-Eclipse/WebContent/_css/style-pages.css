@@ -36,6 +36,7 @@ aside#artigo-home{
     padding: 0 20 20 20;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
+    z-index: 1;
 }
 
 iframe#google-maps{
