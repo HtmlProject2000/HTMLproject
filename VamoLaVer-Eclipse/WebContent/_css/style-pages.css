@@ -19,21 +19,31 @@
 
 section#introducao{
     position: relative;
-    width: 600px;
+    left: 5%;
+    width: 40%;
     margin: 10px 50px 10px 50px ;
 }
 
 aside#artigo-home{
     position: absolute;
-    left: 50%;
-    top:330px;
-    width: 550px;
+    left: 55%;
+    top:365px;
+    width: 40%;
+    height: auto;
+    max-height: 500px;
     background-color: Skyblue;
     box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20 20 20;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
+}
+
+iframe#google-maps{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 20px;
 }
 
 .in-line{
