@@ -2,23 +2,13 @@
 create database projeto1bim2017;
 
 use projeto1bim2017;
-create table usuario (
 
+create table usuario (
     usuEmail varchar(20) not null,
     usuSenha varchar (30)not null,
     usuNome varchar(50) not null,
     primary key (usuEmail)
-    
 );
-
- create table publicacao(
-		pubUsuEmail varchar(30) not null,
-        pubEvId int not null,
-        pubData date not null,
-        primary key (pubUsuEmail,pubEvId),
-        foreign key (pubUsuEmail) references usuario(usuEmail),
-        foreign key (pubEvId) references evento(evId)
- );
 
 create table evento(
 	evId int not null auto_increment,
@@ -34,6 +24,14 @@ create table evento(
     FOREIGN KEY (evElaboradorEmail) references usuario(usuEmail)
  );
 
+ create table publicacao(
+		pubUsuEmail varchar(30) not null,
+        pubEvId int not null,
+        pubData date not null,
+        primary key (pubUsuEmail,pubEvId),
+        foreign key (pubUsuEmail) references usuario(usuEmail),
+        foreign key (pubEvId) references evento(evId)
+ );
  
  create table edicao(
 	edUsuEmail varchar(30) not null,
@@ -42,7 +40,6 @@ create table evento(
 	primary key (edUsuEmail,edEvId),
 	foreign key(edUsuEmail) references usuario(usuEmail),
 	foreign key(edEvId) references evento(evId)
-    
  );
 
  
@@ -62,8 +59,6 @@ create table avaliacao(
     primary key(avUsuEmail,AvEvId),
     foreign key (avUsuEmail) references usuario (usuEmail),
     foreign key (avEvId) references evento (evId)
-    
-    
 );
 
 create table favoritos (
@@ -73,6 +68,3 @@ create table favoritos (
     foreign key (favUsuEmail) references usuario(usuEmail),
     foreign key (favEvId) references evento (evId)
 );
-
-
-
