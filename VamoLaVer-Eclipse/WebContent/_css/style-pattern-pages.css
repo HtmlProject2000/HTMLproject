@@ -105,7 +105,6 @@ footer#rodape{
 }
 
 /* MODAL */
-
 .txts{
     width: 100%;
     padding: 12px;
@@ -116,7 +115,6 @@ footer#rodape{
     margin-bottom: 16px;
     resize: vertical;
 }
-
 .submit-a{
     background-color: #0c6ac6;
     color: white;
@@ -133,12 +131,10 @@ input[type=submit]:hover {
     -webkit-animation-name: anim-color-submit;
     -webkit-animation-duration: 2s;
 }
-
 @-webkit-keyframes anim-color-submit {
     from {background-color: #0c6ac6;}
     to {background-color: #23bf45;}
 }
-
 @keyframes anim-color-submit {
     from {background-color: #0c6ac6;}
     to {background-color: #23bf45;}
@@ -371,10 +367,6 @@ div#name-site h1{
     text-align:center;
 }
 
-.presentation h1{
-    text-align: center;
-}
-
 #pesquisar{
     width: 25px;
     height: 25px;
@@ -397,7 +389,6 @@ container-content{
     width: auto;
 }
 
-/*BUTTONS CLASSES*/
 .submit-b{
     background-color: #0c6ac6;
     color: white;
@@ -416,4 +407,4 @@ container-content{
     cursor: pointer;
     float: right;
 }
-/*END OF BUTTON CLASSES*/
+
