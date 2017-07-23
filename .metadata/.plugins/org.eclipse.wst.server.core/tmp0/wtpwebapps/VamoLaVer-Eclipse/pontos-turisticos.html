@@ -36,7 +36,7 @@
                     <li class="only">
                         <a href="#">Meus Eventos</a>
                         <ul>
-                            <table>
+                            <table id="drop-down">
                                 <tr>
                                     <td>
                                         <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
@@ -67,12 +67,21 @@
                     <li>
                         <div class="search-box">
                             <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
-                            <div id="pesquisar"><img id="img-a" src="_imagens/pesquisar.png"></div>
+                            <div id="pesquisar">
+                                <a href="search-result.html">
+                                    <img id="img-a" src="_imagens/pesquisar.png">
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li class="only">
                         <a id="a-model-login" onclick="gomodellogin()">
                             LOGIN
+                        </a>
+                    </li>
+                    <li class="only">
+                        <a href="sing-in.html">
+                            SING IN
                         </a>
                     </li>
                 </ul>
@@ -85,7 +94,7 @@
                  <table>
                      <tr>
                        <td><img src="_imagens/montagem_pontos-turisticos.png" usemap="#doc_pt" class="tamanhoReduzido"></td>
-                       <td><iframe src="doc_pt.html" name="textos-doc_pt" id="frame-spec" ></iframe></td> 
+                       <!--<td><iframe src="doc_pt.html" name="textos-doc_pt" id="frame-spec" ></iframe></td> -->
                      </tr>
                  </table>                 
                  <map name="doc-pt">
@@ -94,7 +103,7 @@
                      <area shape="rect" cords="856,6,1675,476" href="doc-pt.html#orlaDoSaoRaimundo"/>
                      <area shape="rect" cords="3,461,713,758" href="doc-pt.html#parqueDoMindu"/>
                      <area shape="rect" cords="722,470,1672,740" href="doc-pt.html#portoDeManaus"/>
-                 </map>                   
+                 </map>                  
              </section>  
         </div>
         <footer id="rodape">

@@ -29,7 +29,7 @@ create table evento(
 	evElaboradorEmail varchar (20),
     evPontuacao int,
     evDataDeOcorrencia date,
-    local varchar(50),
+    evlocal varchar(50),
     primary key(evId),
     FOREIGN KEY (evElaboradorEmail) references usuario(usuEmail)
  );

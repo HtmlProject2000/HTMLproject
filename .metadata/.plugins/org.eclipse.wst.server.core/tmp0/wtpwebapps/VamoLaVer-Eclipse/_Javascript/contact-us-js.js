@@ -26,6 +26,33 @@ function gomodelsidebar(){
                 }
             }
 }
+function gomodeloptions(){
+    // Get the modal in login
+            var modalop = document.getElementById('modal-options');
+            
+            // Get the button that opens the modal login
+            var aop = document.getElementById("btn-sidenav-options");
+
+            // Get the <span> element that closes the modal login
+            var spanop = document.getElementsByClassName("closeop")[0];
+
+            // When the user clicks the button, open the modal login
+            aop.onclick = function() {
+                modalop.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal login
+            spanop.onclick = function() {
+                modalop.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modalop) {
+                    modalop.style.display = "none";
+                }
+            }
+}
 function gomodellogin(){
     // Get the modal in login
             var modall = document.getElementById('modal-login');

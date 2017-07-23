@@ -19,21 +19,32 @@
 
 section#introducao{
     position: relative;
-    width: 600px;
+    left: 5%;
+    width: 40%;
     margin: 10px 50px 10px 50px ;
 }
 
 aside#artigo-home{
     position: absolute;
-    left: 50%;
-    top:330px;
-    width: 550px;
+    left: 55%;
+    top:365px;
+    width: 40%;
+    height: auto;
+    max-height: 500px;
     background-color: Skyblue;
     box-shadow: 3px 3px 3px rgba(0,0,0,.5);
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20 20 20;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
+    z-index: 1;
+}
+
+iframe#google-maps{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 20px;
 }
 
 .in-line{
@@ -69,11 +80,17 @@ input[type=button]:hover {
     to {background-color: #0c6a6a;}
 }
 
-.conteiner-options{
-   display:block;
-    float:right;
-    height:100%;
-    width:100px;
+/*NAV OPTIONS*/
+/*NEW NAV OPTIONS*/
+tr h4{
+    text-align: center;
+}
+
+/*END OF NEW NAV OPTIONS*/
+.container-options{
+    position:relative;
+    height:auto;
+    width:auto;
 }
 
 .conteiner-options:hover .nav-options{
@@ -112,6 +129,8 @@ input[type=button]:hover {
     color: dodgerblue;
 }
 
+/*END OF NAV OPTIONS*/
+
 .formulario{
    display:block;
     width:70%;
@@ -138,11 +157,15 @@ input[type=button]:hover {
 
 .accordion{
     position: relative;
-
 }
 
         /*CONTAC-US */
 /* SIDE-NAV  of contact-us*/
+#side-nav{
+    position: absolute;
+    z-index: 3;
+}
+
 #side-nav-id a{
     position: absolute;
     top: 83%;
@@ -155,13 +178,11 @@ input[type=button]:hover {
     color: white;
     border-radius: 0 5px 5px 0;
     background-color: #ffc226;
+    z-index: 3;
 }
 #side-nav-id a:hover{
     left: 0;
-}
-
-#btn-sidenav {
-    top: 20px;
+    z-index: 3;
 }
 
 /* MODAL */
@@ -182,7 +203,7 @@ input[type=button]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
-/* The Modal */
+/* The Modals */
 .modal {
     display: none;
     position: fixed;
@@ -236,20 +257,33 @@ input[type=button]:hover {
     cursor: pointer;
 }
 
+
+/*END MODALS*/
+
 .presentation{
     margin-left: 100px;
     margin-right: 100px;
 }
 
 /* END of contat-us */
+/*PONTOS TURISTICOS*/
+iframe#frame-spec {
+    position: relative;
+    width: 100px;
+}
+
 section#introducao-semBorda{
+    position: relative;
     display: block;
-    width: 1000px;
-    /*float:left;*/
+    width: 80%;
+    left: 10%;
+    /*float:left;*
     padding: 35px 10px 5px 5px; /*cima direita baixo esqueda*/
-    margin: 10px 100px 10px 100px ;
+    /*margin: 10px 100px 10px 100px ;*/
+    
 
 }
+
 section#introducao-semBorda h1{
     font-family:'FonteLogo',sans-serif;
     font-size: 30pt;
@@ -259,6 +293,7 @@ section#introducao-semBorda h1{
     margin-bottom: 0px;
     font-weight: 200;
 }
+
 section#introducao-semBorda h3{
     font-family: 'Titillium Web', sans-serif;
     color:#888888;
@@ -266,6 +301,8 @@ section#introducao-semBorda h3{
     padding: 0px; 
     margin-top: 0px;
 }
+
+/*END OF PONTOS TURISTICOS*/
 
 /* NEW EveNVET */
 
@@ -297,7 +334,7 @@ section#introducao-semBorda h3{
 
 .tbl-form{
     position: relative;
-    width: 80%;
+    width:auto;
     left: 10%;
 }
 
@@ -364,6 +401,7 @@ button[class=btn-edit]:hover {
     position: relative;
     width: 30%;
     left: 35%;
+    height: auto;
 }
 
 #btn-recovery-pass{
@@ -396,5 +434,41 @@ button[class=btn-edit]:hover {
 }
 /*END OF REMMENBER PASSWORD*/
 /*SING IN*/
-
+#form-add-new-usr{
+    position: relative;
+    height: auto;
+    
+}
 /*END OF NEW USER*/
+/*SEARCH RESULT*/
+.form-options table{
+    position: relative;
+    width: auto;
+    left: 10%;
+}
+
+td.titles{
+    background-color: honeydew;
+    text-align: center;
+    font-size: 19px;
+}
+
+.side-nav-op{
+    position: absolute;
+    top: 50%;
+}
+
+.side-nav-op a{
+    position: absolute;
+    left:1250px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #ffc226;
+}
+/*END OF SEACHR RESULT*/

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Login</title>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
+        <link rel = "stylesheet" href = "_css/style-pages.css">
+    </head>
+    <body>
+        <div id="logo"><img src="_imagens/logo.png"></div>
+     <div id="name-site"><h1>VamoLáVer</h1></div>
+     <div id="redes-sociais"><img src="_imagens/redes-sociais.png"></div>
+     <div id="ranking"><img src="_imagens/ranking.png"></div>
+
+
+     <div id="fundo-cabecalho"></div>
+     <div id="cabecalho"></div>
+        <div class="conteiner-top">
+            <header>
+                 <!--<div class="conteiner-top">
+                    <div class="top-logo">
+                        VamosLáVer
+                    </div>
+                </div>-->
+                <div class="conteiner-navigation">
+                    <div class="first-line-navigation">
+                    <div id="fundo-nav"></div>
+
+                      <div class="search-box">
+                          <input type="text" id="txt-search-box" placeholder="Buscar..."/>
+                      <div id="pesquisar"><img src="_imagens/pesquisar.png"></div>
+                        </div>
+                        <div class="login-or-sign-in-box">
+                            <a id="a-model-login" onclick="gomodellogin()">
+                                <img alt="login" height="30px" width="30px" src="_imagens/log.png"/>
+                            </a>
+
+                        </div>
+                        <div id="second-menu">
+                        <div id="conteiner-nav-in-center">
+                            <nav id="nav-variant" role="">
+                                
+                                    <li>
+                                        <a href="home-page.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact-us.html">Quem somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="pontos-turisticos.html">Pontos Turísticos</a>
+                                    </li>
+                                 <li>
+                                    <a href="custon-search-page.html">Busca Personalizada</a>
+                                </li>
+                                   <div class = "dropDown">
+                                    <button class = "dropbtn">Meus Eventos
+                                    </button>
+                                   <!--DROPDOWN-->
+                                    <div class = "dropdown-content2">
+                                      <table>
+                                        <tr>
+                                            <td>
+                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                            </td>
+                                            <td>
+                                                <a href="new-event.html">Cadastrar Futuro evento</a>
+                                            </td>
+                                        </tr>
+                                            <tr>
+                                                <td>
+                                                    <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                                </td>
+                                                <td>
+                                                    <a href="favorite-events.html">Meus Eventos Favoritos</a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                            </td>
+                                            <td>
+                                                <a href="edit-my-events.html">Modificar evento já cadastrado</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    </div>    
+                </div>
+            </header>
+        </div>
+        <div class="block-principal">
+        <div class="title-page">
+            <h1>Login</h1>
+        </div>
+        <div class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <button id="btn-login-entrar">
+                                <img src="_imagens/arrow-right-black.png" height="15px" width="20px">Entrar
+                            </button>
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer id="rodape">
+                <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
+        </footer>
+        <div id="modal-login" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closel">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form name="login">
+                            <label for="login-username-email">Email/Usuário</label>
+                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <label for="login-user-password">Senha</label>
+                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
+                            <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -2,136 +2,122 @@
 <html lang="pt-br">
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <title></title>
+        <title>Sua pesquisa</title>
         <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
+        <link rel = "stylesheet" href="_css/style-pages.css"/>
+        <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
     </head>
-    <body>
-        <div class="conteiner-top">
-            <header>
-                <div class="conteiner-navigation">
-                    <div class="first-line-navigation">
-                        <div class="conteiner-right-top">
-                            <nav class="right-top-menu" role="navigation">
-                                <ul>
-                                    <li>
-                                        MENU
-                                        <ul><!--DropDown-->
-                                            <li>
-                                                <a id="a-model-logi="gomodellogin()">Entre ou Cadastre-se</a>
-                                            </li>
-                                            <li>
-                                                
-                                            </li>
-                                            <li>
-                                                <a href="contact-us.html">Entre em contato</a>
-                                            </li>
-                                            <li>
-                                                <a href="about-us.html">Apresentação do site</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+    <body class="block-principal">
+        <div id="conteiner-header">
+            <div id="logo">
+                <img src="_imagens/logo.png">
+            </div>
+            <div id="name-site">
+                <h1>VamoLáVer</h1>
+            </div>
+            <div id="redes-sociais">
+                <img src="_imagens/redes-sociais.png">
+            </div>
+            <nav>
+                <ul>
+                    <li class="only">
+                        <a href="home-page.html">Home</a>
+                    </li>
+                    <li class="only">
+                        <a href="contact-us.html">Quem Somos?</a>
+                    </li>
+                    <li class="only">
+                        <a href="pontos-turisticos.html">Pontos Turisticos</a>
+                    </li>
+                    <li class="only">
+                        <a href="custon-search-page.html">Busca Personalizada</a>
+                    </li>
+                    <li class="only">
+                        <a href="#">Meus Eventos</a>
+                        <ul>
+                            <table id="drop-down">
+                                <tr>
+                                    <td>
+                                        <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
+                                    </td>
+                                    <td>
+                                        <a href="new-event.html">Cadastrar Futuro evento</a>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td>
+                                            <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
+                                        </td>
+                                        <td>
+                                            <a href="favorite-events.html">Meus Eventos Favoritos</a>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
+                                    </td>
+                                    <td>
+                                        <a href="edit-my-events.html">Modificar evento já cadastrado</a>
+                                    </td>
+                                </tr>
+                            </table> 
+                        </ul>
+                    </li>
+                    <li>
                         <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
-                            <button  id="btn-search">
+                            <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
+                            <div id="pesquisar">
                                 <a href="search-result.html">
-                                    <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
+                                    <img id="img-a" src="_imagens/pesquisar.png">
                                 </a>
-                            </button>
+                            </div>
                         </div>
-                        <div class="login-or-sing-in-box">
-                            <a id="a-model-logi="gomodellogin()">
-                                <img alt="login" height="30px" width="30px" src="_imagens/login.png"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="second-line">
-                        <div id="conteiner-nav-in-center">
-                            <nav id="nav-variant" role="">
-                                <ul>
-                                    <li>
-                                        <a href="home-page.html">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="custon-search-page.html">Busca Personalizada</a>
-                                    </li>
-                                    <li>
-                                        <a href="pontos-turisticos.html">Visite</a>
-                                    </li>
-                                    <li>
-                                        Meus Eventos
-                                        <ul><!--DROPDOWN-->
-                                            <li>
-                                                <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
-                                                <a href="new-event.html">Novo Evento</a>
-                                            </li>
-                                            <li>
-                                                <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                                <a href="favorite-events.html">Favoritos</a>
-                                            </li>
-                                            <li>
-                                                <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
-                                                <a href="my-events-list.html">Minha Lista de Eventos</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <div class="conteiner-options">
-            Opções de exibição
-            <nav class="nav-options">
-                <ul class="nav-ul-options">
-                    <li class="nav-ul-li-options">
-                        <label for="btn-alphabetical-order">Ordem Afabética</label>
-                        <input type="button" id="btn-alphabetical-order" value="↑ or ↓"><!-- A IDEIAA É QUE O BOTÃO MUDE PARA "↑" ou "↓" CASO O USUÁRIO VENHA A CLICKAR NESTE BOTÃO-->
                     </li>
-                    <li class="nav-ul-li-options">
-                        <label for="btn-chrnological-order">Ordem Cronológica</label>
-                        <input type="button" id="btn-chrnological-order" value="↑ or ↓"><!--MUDAR PARA "9-1"-->
+                    <li class="only">
+                        <a id="a-model-login" onclick="gomodellogin()">
+                            LOGIN
+                        </a>
                     </li>
-                    <li class="nav-ul-li-options">
-                        <label for="tbn-increscent-decrescent-order">Ordem de Qtd. prevista de Visitantes</label>
-                        <input type="button" id="tbn-increscent-decrescent-order" value="↑ or ↓">
-                    </li>
-                    <li class="nav-ul-li-options">
-                        <label for="checkbox-my-events">Meus eventos</label>
-                        <input type="checkbox" id="checkbox-my-events" value="Meus">
+                    <li class="only">
+                        <a href="sing-in.html">
+                            SING IN
+                        </a>
                     </li>
                 </ul>
             </nav>
-            
         </div>
-        <div class="title-page">
-            <h1>Resultados da pesquisa</h1>
+        <div  class="side-nav-op">
+            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">Opções de organização</a>
         </div>
-        <div class="conteiner-result-panel">
-            <div class="box"><!--SABEMOS QUE OS BOXES SERÃO IMPLEMENTADOS EM JS JÁ QUE UTILIZARÃO O BANCO DE DADOS-->
-                <div class="box-informations">
-                    <pre>
-                        NOME:____________
-                        DATA:__/__/____
-                        CATEGORIA:_______
-                    </pre>
+        <div class="container-content">
+            <article class="presentation">
+                <h1>Resultados da pesquisa</h1>
+                <div class="conteiner-result-panel">
+                    <div class="box"><!--SABEMOS QUE OS BOXES SERÃO IMPLEMENTADOS EM JS JÁ QUE UTILIZARÃO O BANCO DE DADOS-->
+                        <div class="box-informations">
+                            <pre>
+                                NOME:____________
+                                DATA:__/__/____
+                                CATEGORIA:_______
+                            </pre>
+                        </div>
+                        <div class="box-description">
+                            <pre>
+                                DESCRIÇÃO:____________
+                                ______________________
+                                ______________________
+                            </pre>
+                        </div>
+                        <div class="box-favorite">
+                            <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="box-description">
-                    <pre>
-                        DESCRIÇÃO:____________
-                        ______________________
-                        ______________________
-                    </pre>
-                </div>
-                <div class="box-favorite">
-                    <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
-                </div>
-            </div>
+            </article>
         </div>
+        <footer id="rodape">
+            <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
+        </footer>
         <div id="modal-login" class="modal">
             <div class="modal-content-login">
                 <div class="modal-header">
@@ -147,6 +133,84 @@
                             <input type="password" class="txts" id="login-user-password" size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div id="modal-options" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closeop">&times;</span>
+                    <h3>Opções de exibição</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="div-c">
+                        <form id="form-options-search-result" class="form-options">
+                            <table>
+                                <tr>
+                                    <td  class="titles" colspan="2">
+                                        Ordem Alfabética do Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-oa-az">A-Z</label>
+                                        <input type="radio" id="radio-oa-az"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-oa-za">Z-A</label>
+                                        <input type="radio" id="radio-oa-za"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Data Previstas Para Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-dtpev-cres">Crescente</label>
+                                        <input type="radio" id="radio-dtpev-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-dtpev-dec">Decrescente</label>
+                                        <input type="radio" id="radio-dtpev-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Qtd. prevista de visitantes
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-qtd-cre">Crescente</label>
+                                        <input type="radio" id="radio-qtd-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-qtd-dec">Decrescente</label>
+                                        <input type="radio" id="radio-qtd-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Mais opções
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="check-only-my">Somente meus Eventos</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="check-only-my"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="submit" class="submit-b" id="btn-op-ok" value="OK">
+                            <input type="reset" class="reset-b" id="btn-op-eraser" value="limpar">
                         </form>
                     </div>
                 </div>
