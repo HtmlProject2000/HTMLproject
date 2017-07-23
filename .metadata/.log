@@ -1624,3 +1624,15 @@ java.lang.NullPointerException
 	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:109)
 	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:73)
 	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-22 21:58:46.502
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-22 21:58:46.600
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-22 21:59:17.970
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-07-22 21:59:17.973
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

@@ -9,16 +9,16 @@ public class BDConnect {
 	public String user = "root";
 	public String password = "t00r";
 	public BDConnect(){
+	
+	}
+	
+	public Connection setDbLink() throws SQLException{
 		try {
 			Class.forName(driver);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
-	}
-	
-	public Connection setDbLink() throws SQLException{
 		return DriverManager.getConnection(url,user,password);
 		
 	}
