@@ -34,12 +34,12 @@ public class usuarioDao extends HttpServlet {
     
     protected void inserirUsuario(usuario u) throws SQLException{
     	con = new BDConnect().setDbLink();
-    	String sql= "insert into usuario (usuNome,usuEmail,usuSenha) values (?,?,?)";
+    	String sql= "insert into usuario(usuNome,usuEmail,usuSenha) values(?,?,?);";
     	pstmt = con.prepareStatement(sql);
     	pstmt.setString(1,u.getNome());
     	pstmt.setString(2,u.getEmail());
     	pstmt.setString(3,u.getSenha());
-    	pstmt.executeUpdate(sql);
+    	pstmt.executeUpdate();
     	pstmt.close();
     	con.close();
     	return;
@@ -47,7 +47,7 @@ public class usuarioDao extends HttpServlet {
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setContentType("text/html; charset= 'UTF-8'");
+
 		PrintWriter out = response.getWriter();
 		out.println("<h1>CHEGAMOS AO USUARIODAO</h1>");
 		
