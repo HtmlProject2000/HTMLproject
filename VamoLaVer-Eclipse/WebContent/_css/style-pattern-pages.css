@@ -45,7 +45,7 @@ nav td a:hover{
     background-color: #c9c9c9;
 }
 
-li a{
+.only a{
     display: inline-block;
     color: white;
     text-align: center;
@@ -53,7 +53,7 @@ li a{
     text-decoration: none;
 }
 
-nav td a{
+#drop-down a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -358,6 +358,7 @@ div#name-site h1{
 }
 
 .search-box {
+    position: relative;
     width:200px;
     padding: 14px 16px 14px 16px;
 }
@@ -376,10 +377,16 @@ div#name-site h1{
 }
 
 #pesquisar{
+    position: relative;
     width: 25px;
     height: 25px;
     box-sizing: border-box;
     float: right;
+}
+
+#pessquisar a{
+    width: auto;
+    height: auto;
 }
 
 #img-a{
