@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Ravi+Prakash');
+@font-face{
+    font-family:'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+.palavrasJogadasAoVento h1{
+    padding-top: 90px;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+}
+.palavrasJogadasAoVento p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+section#introducao{
+    position: relative;
+    left: 5%;
+    width: 40%;
+    margin: 10px 50px 10px 50px ;
+}
+
+aside#artigo-home{
+    position: absolute;
+    left: 55%;
+    top:365px;
+    width: 40%;
+    height: auto;
+    max-height: 500px;
+    background-color: Skyblue;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.5);
+    padding: 0 20 20 20;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+iframe#google-maps{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+.in-line{
+    display: inline;
+}
+
+/* custom search paage*/
+
+.div-c{
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 25%;
+}
+
+input[type=button] {
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #23bf45;
+    -webkit-animation-name: anim-color-button;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes anim-color-button {
+    from {background-color: #0c6ac6;}
+    to {background-color: #0c6a6a;}
+}
+
+/*NAV OPTIONS*/
+/*NEW NAV OPTIONS*/
+tr h4{
+    text-align: center;
+}
+
+/*END OF NEW NAV OPTIONS*/
+.container-options{
+    position:relative;
+    height:auto;
+    width:auto;
+}
+
+.conteiner-options:hover .nav-options{
+    width:320px;
+}
+
+.conteiner-options .nav-options{
+    display:block;
+    float:right;
+    margin-top:120px;
+    height:130px;
+    width:0px;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: .5s;
+    background-color: #0c6ac6;
+    border-radius: 30px 0px 0px 30px;
+    padding-top:20px;
+}
+
+.nav-options table{
+    width:312.5px;
+}
+
+.nav-options table td{
+    color:#FFF;
+}
+
+.nav-options table td input{
+    font-weight: bolder;
+    background:linear-gradient(rgb(254,254,254),rgb(226,228,230));
+    border-radius:5px;
+    transition:.75s;
+}
+
+.nav-options table td input:hover{
+    color: dodgerblue;
+}
+
+/*END OF NAV OPTIONS*/
+
+.formulario{
+   display:block;
+    width:70%;
+    height:100%;
+    padding:30px;
+    position: relative;
+    z-index: 1;
+}
+
+.formulario li{
+   padding-bottom: 3px;
+}
+
+.panel-a-s{
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    transition:.5s;
+}
+
+.in-panel-a-s{
+    list-style-type: none;
+}
+
+.accordion{
+    position: relative;
+}
+
+        /*CONTAC-US */
+/* SIDE-NAV  of contact-us*/
+#side-nav{
+    position: absolute;
+    z-index: 3;
+}
+
+#side-nav-id a{
+    position: absolute;
+    top: 83%;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffc226;
+    z-index: 3;
+}
+#side-nav-id a:hover{
+    left: 0;
+    z-index: 3;
+}
+
+/* MODAL */
+
+.txts{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* The Modals */
+.modal {
+    display: box;
+    position: fixed;
+    z-index: 51;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+.modal-content-login {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 1s;
+}
+.close, .closel{
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus, .closel:hover,
+.closel:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*END MODALS*/
+
+.presentation{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* END of contat-us */
+/*PONTOS TURISTICOS*/
+iframe#frame-spec {
+    position: relative;
+    width: 100px;
+}
+
+section#introducao-semBorda{
+    position: relative;
+    display: block;
+    width: 80%;
+    left: 10%;
+    /*float:left;*
+    padding: 35px 10px 5px 5px; /*cima direita baixo esqueda*/
+    /*margin: 10px 100px 10px 100px ;*/
+    
+
+}
+
+section#introducao-semBorda h1{
+    font-family:'FonteLogo',sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5); 
+    padding: 0px; 
+    margin-bottom: 0px;
+    font-weight: 200;
+}
+
+section#introducao-semBorda h3{
+    font-family: 'Titillium Web', sans-serif;
+    color:#888888;
+    font-size: 15pt;
+    padding: 0px; 
+    margin-top: 0px;
+}
+
+/*END OF PONTOS TURISTICOS*/
+
+/* NEW EveNVET */
+
+#div-a{
+    position: relative;
+    width: 50%;
+    height: auto;
+    left: 20%;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #ffc226;
+    margin: 10px;
+}
+
+.a{
+    position: relative;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.form-add-new-event {
+    position: relative;
+    width: 100%;
+    border-top-style: groove;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-color: #ffc226;
+}
+
+.tbl-form{
+    position: relative;
+    width:auto;
+    left: 10%;
+}
+
+#date-content{
+   width: 100%
+}
+
+.boxes{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* EDIT MY EVENT/*/
+
+.box-edit{
+    position:relative;
+}
+
+.btn-edit{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+button[class=btn-edit]:hover {
+    background-color: orange;
+    -webkit-animation-name: anim-color-edit;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes anim-color-edit {
+    from {background-color: #0c6ac6;}
+    to {background-color: orange;}
+}
+
+@keyframes anim-color-edit {
+    from {background-color: #0c6ac6;}
+    to {background-color: orange;}
+}
+/*END OF EDIT MY EVENT*/
+/*PAINEL DE RESULTADOS*/
+.conteiner-result-panel{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+/*END OF PAINEL DE RESULTADOS*/
+/*SING IN*/
+
+/*END OF w IN*/
+/*REMMENBER PASSWORD*/
+.div-b{
+    position: relative;
+    width: 30%;
+    left: 35%;
+    height: auto;
+}
+
+#btn-recovery-pass{
+    background-color: #0c6ac6;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn-recovery-pass:hover{
+    background-color: forestgreen;
+    -webkit-animation-name:btn-recovery-anim;
+    -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes btn-recovery-anim{
+    from{background-color: #0c6ac6}
+    to{
+        background-color: forestgreen;
+    }
+}
+
+@keyframes btn-recovery-anim{
+   from{background-color: #0c6ac6}
+    to{background-color: forestgreen;} 
+}
+/*END OF REMMENBER PASSWORD*/
+/*SING IN*/
+#form-add-new-usr{
+    position: relative;
+    height: auto;
+    
+}
+/*END OF NEW USER*/
+/*SEARCH RESULT*/
+.form-options table{
+    position: relative;
+    width: auto;
+    left: 10%;
+}
+
+td.titles{
+    background-color: honeydew;
+    text-align: center;
+    font-size: 19px;
+}
+
+.side-nav-op{
+    position: absolute;
+    top: 50%;
+}
+
+.side-nav-op a{
+    position: absolute;
+    left:1250px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #ffc226;
+}
+/*END OF SEACHR RESULT*/
