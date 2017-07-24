@@ -111,3 +111,8 @@
 0:0:0:0:0:0:0:1 - - [23/Jul/2017:01:10:46 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=w&campoUsuEmail=w@gmail.com&campoUsuEmail=w@gmail.com&campoUsuSenha=we&campoUsuSenha=we HTTP/1.1" 200 58
 0:0:0:0:0:0:0:1 - - [23/Jul/2017:01:11:31 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=w&campoUsuEmail=w@gmail.com&campoUsuEmail=w@gmail.com&campoUsuSenha=ae&campoUsuSenha=ae HTTP/1.1" 200 58
 0:0:0:0:0:0:0:1 - - [23/Jul/2017:01:11:50 -0400] "GET /VamoLaVer-Eclipse/signInVerificacao?campoUsuNome=w&campoUsuEmail=wae@gmail.com&campoUsuEmail=wae@gmail.com&campoUsuSenha=fi&campoUsuSenha=fi HTTP/1.1" 200 58
+127.0.0.1 - - [23/Jul/2017:22:04:10 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:22:04:13 -0400] "GET /VamoLaVer-Eclipse/new-event.html HTTP/1.1" 200 8051
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:22:05:06 -0400] "GET /favicon.ico HTTP/1.1" 404 1084
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:22:05:38 -0400] "GET /VamoLaVer-Eclipse/newEventVerificacao?campo-nome=rgwger&campo-data=1243-12-21&campo-local=ghbre&campo-categ=ddhfjj&campo-desc=hrejetj&campo-qndPessoas=34 HTTP/1.1" 200 410
+0:0:0:0:0:0:0:1 - - [23/Jul/2017:22:06:04 -0400] "GET /VamoLaVer-Eclipse/newEventVerificacao?campo-nome=&campo-data=&campo-local=jnjojnnojpn&campo-categ=cat&campo-desc=tertgewg&campo-qndPessoas=34 HTTP/1.1" 200 342
