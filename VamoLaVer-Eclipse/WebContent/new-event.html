@@ -89,27 +89,28 @@
         <div class="container-content">
             <div id="div-a">
                 <h1 class="a">Novo evento</h1>
-                <form class="form-add-new-event" method = 'get' action = 'newEventVerificacao'>
+                <form class="form-add-new-event" method = 'get' action = 'loginVerificacao'>
+                <input type = 'hidden' name = 'formName' value = 'form-add-new-event'>
                 <table class="tbl-form">
                     <tr>
                         <td>
-                            <label for="txt-name">Nome</label>
+                            <label for="txt-name" >*Nome</label>
                         </td>
                         <td>
-                            <input type="text" class="txts" name="campo-nome" id="txt-name"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="date-initial">Data</label>
-                        </td>
-                        <td>
-                            <input type="date" class="boxes" name="campo-data" id="date-initial"/>
+                            <input type="text" class="txts" name="campo-nome" id="txt-name" required/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="txt-local">Local</label>
+                            <label for="date-initial" >*Data</label>
+                        </td>
+                        <td>
+                            <input type="date" class="boxes" name="campo-data" id="date-initial" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txt-local"> Local</label>
                         </td>
                         <td>
                             <input type="text" class="txts" name="campo-local" id="txt-local"/>
@@ -117,23 +118,23 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="select-category">Categoria</label>
+                            <label for="select-category">*Categoria</label>
                         </td>
                         <td>
-                           <input type="text" class="txts" name="campo-categ" id="select-category"/>
+                           <input type="text" class="txts" name="campo-categ" id="select-category" required/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="textarea-descricao">Descrição</label>
+                            <label for="textarea-descricao">*Descrição</label>
                         </td>
                         <td>
-                            <textarea id="textarea-descricao" name = "campo-desc" class="txts" style="height:100px" placeholder="Digite sua descrição do evento aqui!!" ></textarea>
+                            <textarea id="textarea-descricao" name = "campo-desc" class="txts" style="height:100px" placeholder="Digite sua descrição do evento aqui!!" required></textarea>
                         </td>
                     </tr>
                     <tr>
                     	<td>
-                    		<label for = "campo-qndPessoas">Quantidade Prevista de Pessoas</label>
+                    		<label for = "campo-qndPessoas"> Quantidade Prevista de Pessoas</label>
                     	</td>
                     	<td>
                     		<input type = "number" id ="campo-qndPessoas" name = "campo-qndPessoas" class = "boxes">
@@ -156,11 +157,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form name="login">
+                        <form name="login" method = 'get' action ='loginVerificacao'>
+                        	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/Usuário</label>
-                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <input type="text" class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="password" class="txts" id="login-user-password" name ='login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>

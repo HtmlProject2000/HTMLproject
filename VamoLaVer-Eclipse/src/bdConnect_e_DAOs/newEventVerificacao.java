@@ -31,8 +31,8 @@ public class newEventVerificacao extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
 		String url = "/eventoDao";
-		List<String> erros = new ArrayList<>();
 		String evNome = request.getParameter("campo-nome");
 		String evLocal = request.getParameter("campo-local");
 		String evCategoria = request.getParameter("campo-categ");
@@ -42,10 +42,6 @@ public class newEventVerificacao extends HttpServlet {
 		int evPontuacao = 0;
 		String evElaborador = "e@gmail.com";
 		
-
-		if (evData.equals("")) {
-			erros.add("Data não informada.");
-		} 
 		
 		if (request.getParameter("campo-qndPessoas").equals("")) {
 			evQtPessoas = 0;
@@ -53,23 +49,6 @@ public class newEventVerificacao extends HttpServlet {
 			evQtPessoas = Integer.parseInt(request.getParameter("campo-qndPessoas"));
 		}
 
-		if (evNome.equals("")) {
-			erros.add("Nome do evento não informado.");
-		}
-
-		if (evDescricao.equals("")) {
-			erros.add("Descrição não Informada.");
-		}
-
-		if (evCategoria.equals("")) {
-			erros.add("Categoria não Informada.");
-		}
-
-		if (erros.size() > 0) {
-			request.setAttribute("erros", erros);
-			url = "/newEventErros.jsp";
-
-		} else {
 			request.setAttribute("evNome", evNome);
 			request.setAttribute("evLocal", evLocal);
 			request.setAttribute("evCategoria", evCategoria);
@@ -78,10 +57,7 @@ public class newEventVerificacao extends HttpServlet {
 			request.setAttribute("evData", evData);
 			request.setAttribute("evPontuacao", evPontuacao);
 			request.setAttribute("evElaborador", evElaborador);
-
-		}
-
-		request.getRequestDispatcher(url).forward(request, response);
+			request.getRequestDispatcher(url).forward(request, response);
 
 	}
 

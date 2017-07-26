@@ -119,7 +119,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form name="login" method = 'get'>
+                        <form name="login" method = 'get' action ='loginVerificacao'>
+                        	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/Usuário</label>
                             <input type="text" class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>

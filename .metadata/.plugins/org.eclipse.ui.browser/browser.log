@@ -1,0 +1,3 @@
+
+jul 25, 2017 07:57:04.37 NEW SESSION
+jul 25, 2017 07:57:04.37 [5864:9880:0725/075704.366:ERROR:service_manager.cc(158)] Connection InterfaceProviderSpec prevented service: content_plugin from binding interface: memory_instrumentation::mojom::Coordinator exposed by: content_browser
