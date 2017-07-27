@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	String ref = (String) request.getAttribute("voltarPara");
-%>
+	<%
+		String ref = (String) request.getAttribute("voltarPara");
+	%>
 	<p>Usuário logado com sucesso!</p>
 	<p>
-		<a href = <%=ref %>><input type='button' value='Voltar'></a>
+		<a href=<%=ref%>><input type='button' value='Voltar'></a>
 	</p>
 
 </body>

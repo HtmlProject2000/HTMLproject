@@ -310,7 +310,7 @@ section#introducao-semBorda h3{
     position: relative;
     width: 50%;
     height: auto;
-    left: 20%;
+    left: 25%;
     border-style: groove;
     border-radius: 20px;
     border-color: #ffc226;
@@ -335,7 +335,7 @@ section#introducao-semBorda h3{
 .tbl-form{
     position: relative;
     width:auto;
-    left: 10%;
+    left: 20%;
 }
 
 #date-content{

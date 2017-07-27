@@ -129,7 +129,7 @@
                             <label for="textarea-descricao">*Descrição</label>
                         </td>
                         <td>
-                            <textarea id="textarea-descricao" name = "campo-desc" class="txts" style="height:100px" placeholder="Digite sua descrição do evento aqui!!" required></textarea>
+                            <textarea id="textarea-descricao" name = "campo-desc" class="txts" placeholder="Digite sua descrição do evento aqui!!" required></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -160,9 +160,9 @@
                         <form name="login" method = 'get' action ='loginVerificacao'>
                         	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/Usuário</label>
-                            <input type="text" class="txts" id="login-username-email" name = 'login-campo-email' size="30">
+                            <input type="email" required class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" class="txts" id="login-user-password" name ='login-campo-senha' size="30">
+                            <input type="password" required class="txts" id="login-user-password" name ='login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>

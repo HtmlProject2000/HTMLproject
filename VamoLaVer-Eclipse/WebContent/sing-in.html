@@ -92,17 +92,17 @@
                     <label for="txt-add-user-name">
                         Nome de Usuário
                     </label>
-                    <input id="txt-add-user-name" class="txts" type="text" name = "campoUsuNome"placeholder="Seu nome" /> 
+                    <input id="txt-add-user-name" class="txts" type="text" name = "campoUsuNome" placeholder="Seu nome" required/> 
                     <label for="txt-add-user-email">
                         Email
                     </label>
-                    <input id="txt-add-users-email" class="txts" type="email" name = "campoUsuEmail" placeholder="Seu email" />
-                    <input id="txt-add-user-email-re" class="txts" type="email" name = "campoUsuEmail" placeholder="Repita seu email"/>
+                    <input id="txt-add-users-email" class="txts" type="email" name = "campoUsuEmail" placeholder="Seu email" required/>
+                    <input id="txt-add-user-email-re" class="txts" type="email" name = "campoUsuEmail" placeholder="Repita seu email" required/>
                     <label for="txt-add-user-pass">
                         Senha
                     </label>
-                    <input id="txt-add-user-pass" class="txts" type="password" name = "campoUsuSenha" placeholder="Sua senha"/>
-                    <input id="txt-add-user-pass-re" class="txts" type="password" name = "campoUsuSenha" placeholder="Repita sua senha"/>
+                    <input id="txt-add-user-pass" class="txts" type="password" required name = "campoUsuSenha" placeholder="Sua senha" required/>
+                    <input id="txt-add-user-pass-re" class="txts" type="password" required name = "campoUsuSenha" placeholder="Repita sua senha" required/>
                     <input type="submit" id="tbn-add-new-user" class="submit-b" value="Cadastrar"/>
                     <input type="reset" id="btn-cls-new-user" class="reset-b" value="limpar"/>
                 </form>
@@ -122,9 +122,9 @@
                         <form name="login" method = 'get' action ='loginVerificacao'>
                         	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/Usuário</label>
-                            <input type="text" class="txts" id="login-username-email" name = 'login-campo-email' size="30">
+                            <input type="email" required class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" class="txts" id="login-user-password" name = 'login-campo-senha' size="30">
+                            <input type="password" required class="txts" id="login-user-password" name = 'login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>

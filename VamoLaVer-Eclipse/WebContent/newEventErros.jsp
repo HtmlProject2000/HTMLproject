@@ -113,9 +113,9 @@
                     <div class="container">
                         <form name="login">
                             <label for="login-username-email">Email/Usuário</label>
-                            <input type="text" class="txts" id="login-username-email" size="30">
+                            <input type="email" required class="txts" id="login-username-email" size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" class="txts" id="login-user-password" size="30">
+                            <input type="password" required class="txts" id="login-user-password" size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>
