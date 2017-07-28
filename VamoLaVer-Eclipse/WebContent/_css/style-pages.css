@@ -454,14 +454,14 @@ td.titles{
 }
 
 .side-nav-op{
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    bottom: 40%;
+    left: 91%;
 }
 
 .side-nav-op a{
     position: absolute;
-    left:1250px;
-    transition: 0.3s;
+    transition: 1s;
     padding: 15px;
     width: 100px;
     padding-left: 10px;
@@ -471,4 +471,7 @@ td.titles{
     border-radius: 5px;
     background-color: #ffc226;
 }
+.side-nav-op a:hover{
+    background-color: #e2ab1d
+} 
 /*END OF SEACHR RESULT*/
