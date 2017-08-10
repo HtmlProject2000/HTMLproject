@@ -108,11 +108,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form name="login">
+                        <form name="login" method = 'get' action ='loginVerificacao'>
+                        	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/Usuário</label>
-                            <input type="email" required class="txts" id="login-username-email" size="30">
+                            <input type="email" required class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" required class="txts" id="login-user-password" size="30">
+                            <input type="password" required class="txts" id="login-user-password" name ='login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>

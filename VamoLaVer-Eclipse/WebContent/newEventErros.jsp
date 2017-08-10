@@ -44,26 +44,18 @@
                                         <img alt="novo" height="20px" width="20px" src="_imagens/add-png-black.png">
                                     </td>
                                     <td>
-                                        <a href="new-event.html">Cadastrar Futuro evento</a>
+                                        <a href="new-event.html">Adicionar um Novo evento</a>
                                     </td>
                                 </tr>
-                                    <tr>
-                                        <td>
-                                            <img alt="favorito" height="20px" width="20px" src="_imagens/star-favorite-black-png.png">
-                                        </td>
-                                        <td>
-                                            <a href="favorite-events.html">Meus Eventos Favoritos</a>
-                                        </td>
-                                    </tr>
                                 <tr>
                                     <td>
                                         <img alt="lista" height="20px" width="20px" src="_imagens/list-icon-png-black.png">
                                     </td>
                                     <td>
-                                        <a href="edit-my-events.html">Modificar evento já cadastrado</a>
+                                        <a href="my-events-list.html" title="Lista com seus eventos e favoritos">Listar meus Eventos</a>
                                     </td>
                                 </tr>
-                            </table> 
+                            </table>
                         </ul>
                     </li>
                     <li>

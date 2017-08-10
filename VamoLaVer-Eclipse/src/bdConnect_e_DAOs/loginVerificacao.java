@@ -25,40 +25,62 @@ public class loginVerificacao extends HttpServlet {
 		// TODO Auto-generated method stub
 		try {
 			String ref = request.getHeader("referer");
-			String formName= request.getParameter("formName");
+			String formName = request.getParameter("formName");
 			String url = null;
-			/*if (ref.equals("http://localhost:8081/VamoLaVer-Eclipse/new-event.html")) {
-				if (request.getSession().getAttribute("usuarioLogado") != null) {
-					url = "/newEventVerificacao.jsp";
-				} else {
-					url = "/loginNewEventErro.jsp";
-				}
-			} else {
-				if (request.getSession().getAttribute("usuarioLogado") != null) {
-					con = new BDConnect().setDbLink();
-					st = con.createStatement();
-					rs = st.executeQuery("select * form usuario");
+			/*
+			 * if (ref.equals(
+			 * "http://localhost:8081/VamoLaVer-Eclipse/new-event.html")) { if
+			 * (request.getSession().getAttribute("usuarioLogado") != null) {
+			 * url = "/newEventVerificacao.jsp"; } else { url =
+			 * "/loginNewEventErro.jsp"; } } else { if
+			 * (request.getSession().getAttribute("usuarioLogado") != null) {
+			 * con = new BDConnect().setDbLink(); st = con.createStatement(); rs
+			 * = st.executeQuery("select * form usuario");
+			 * 
+			 * while (rs.next()) { if
+			 * (rs.getString("usuEmail").equals(request.getParameter(
+			 * "login-campo-email")) &&
+			 * rs.getString("usuSenha").equals(request.getParameter(
+			 * "login-campo-senha"))) {
+			 * request.getSession().setAttribute("usuarioLogado",
+			 * rs.getString("usuEmail")); url = "/logadoComSucesso.jsp"; break;
+			 * } } if (request.getSession().getAttribute("usuarioLogado") ==
+			 * null) { url = "/loginCampoIncorreto"; } } else { url =
+			 * "/usuarioJaLogado.jsp"; } }
+			 */
 
-					while (rs.next()) {
-						if (rs.getString("usuEmail").equals(request.getParameter("login-campo-email"))
-								&& rs.getString("usuSenha").equals(request.getParameter("login-campo-senha"))) {
-							request.getSession().setAttribute("usuarioLogado", rs.getString("usuEmail"));
-							url = "/logadoComSucesso.jsp";
-							break;
-						}
-					}
-					if (request.getSession().getAttribute("usuarioLogado") == null) {
-						url = "/loginCampoIncorreto";
-					}
-				} else {
-					url = "/usuarioJaLogado.jsp";
-				}
-			}*/
-			if(formName.equals("login")){
+											// ESQUEMA PARA "RECARREGAR AS PÁGINAS" E EXIBIR AS NOTIFICAÇOES
+			// String lhp = "loginHomePage";
+			// String lcu = "loginContactUs";
+			// String lne = "loginNewEvent";
+			// if (formName.equals(lhp))
+			// url = "/home-page.html";
+			//
+			// if (formName.equals(lcu))
+			// url = "/contac-us.html";
+			//
+			// if (formName.equals(lne))
+			// url = "/new-event.html";
+
+			// switch (formName) {//NÃO SEI POR QUÊ NÃO DA CERTO
+			// case "loginHomePage":
+			// url = "/home-page.html";
+			// break;
+			// case "loginContactUs":
+			// url = "/contact-us.html";
+			// break;
+			// case "loginNewEvent":
+			// url = "/new-event.html";
+			// break;
+			// }
+
+			if (formName.equals("login")) {
 				if (request.getSession().getAttribute("usuarioLogado") != null) {
 					url = "/usuarioJaLogado.jsp";
+					// CONCATENA COM O PARAMETRO QUE SERÁ LIDO NO SCRIPT APÓS O
+					// CARREGAMENTO DA PÁGINA
 				} else {
-					
+
 					con = new BDConnect().setDbLink();
 					st = con.createStatement();
 					rs = st.executeQuery("select * from usuario");
@@ -68,18 +90,20 @@ public class loginVerificacao extends HttpServlet {
 								&& rs.getString("usuSenha").equals(request.getParameter("login-campo-senha"))) {
 							request.getSession().setAttribute("usuarioLogado", rs.getString("usuEmail"));
 							url = "/logadoComSucesso.jsp";
+							// AQUI TAMBÉM CONCATENA O NOME DO USUÁRIO PARA SER
+							// EXIBIDO EM UMA MENSAGEM DE BEM VINDO
 							break;
 						}
 					}
 					if (request.getSession().getAttribute("usuarioLogado") == null) {
-						url = "/loginCampoIncorreto";
+						url = "/new-event.html?n=3";// "/loginCampoIncorreto";
 					}
 				}
-			}else{
+			} else {
 				if (request.getSession().getAttribute("usuarioLogado") != null) {
 					url = "/newEventVerificacao";
 				} else {
-					url = "/loginNewEventErro.jsp";
+					url += "/new-event.html?n=4";// "/loginNewEventErro.jsp";
 				}
 			}
 			request.setAttribute("voltarPara", ref);

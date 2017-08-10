@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="pt-br">
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <title>Sua pesquisa</title>
-        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>
+        <title>Lista de Eventos</title>
+        <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>     
+        <script type="text/javascript" src="_Javascript/notifications.js"></script>
         <link rel = "stylesheet" href="_css/style-pages.css"/>
         <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
     </head>
@@ -13,7 +16,7 @@
                 <img src="_imagens/logo.png">
             </div>
             <div id="name-site">
-                <h1>VamoLÃ¡Ver</h1>
+                <h1>VamoLáVer</h1>
             </div>
             <div id="redes-sociais">
                 <img src="_imagens/redes-sociais.png">
@@ -33,7 +36,7 @@
                         <a href="custon-search-page.html">Busca Personalizada</a>
                     </li>
                     <li class="only">
-                        <a href="#">Meus Eventos</a>
+                        <a href="#">Menu</a>
                         <ul>
                             <table id="drop-down">
                                 <tr>
@@ -52,14 +55,14 @@
                                         <a href="my-events-list.html" title="Lista com seus eventos e favoritos">Listar meus Eventos</a>
                                     </td>
                                 </tr>
-                            </table>
+                            </table> 
                         </ul>
                     </li>
                     <li>
                         <div class="search-box">
                             <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
                             <div id="pesquisar">
-                                <a href="search-result.html">
+                                <a hrefs="search-result.html">
                                     <img id="img-a" src="_imagens/pesquisar.png">
                                 </a>
                             </div>
@@ -79,36 +82,18 @@
             </nav>
         </div>
         <div  class="side-nav-op">
-            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">OpÃ§Ãµes de organizaÃ§Ã£o</a>
+            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">Opções de organização</a>
         </div>
         <div class="container-content">
-            <article class="presentation">
-                <h1>Resultados da pesquisa</h1>
-                <div class="conteiner-result-panel">
-                    <div class="box"><!--SABEMOS QUE OS BOXES SERÃƒO IMPLEMENTADOS EM JS JÃ QUE UTILIZARÃƒO O BANCO DE DADOS-->
-                        <div class="box-informations">
-                            <pre>
-                                NOME:____________
-                                DATA:__/__/____
-                                CATEGORIA:_______
-                            </pre>
-                        </div>
-                        <div class="box-description">
-                            <pre>
-                                DESCRIÃ‡ÃƒO:____________
-                                ______________________
-                                ______________________
-                            </pre>
-                        </div>
-                        <div class="box-favorite">
-                            <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            <div id="container-link-event">
+                <div id="link-edit-this-event"></div>
+                <div id="link-favorite-or-not"></div>
+                <div id="link-name-of-this-event"></div>
+                <div id="delete-this-event"></div>
+            </div>
         </div>
         <footer id="rodape">
-            <p>Copyright &copy; 2017 -AndrÃ©,Lucas,Nereida,Rafael</p>
+            <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
         </footer>
         <div id="modal-login" class="modal">
             <div class="modal-content-login">
@@ -118,11 +103,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form name="login">
+                        <form name="login" method = 'get' action ='loginVerificacao'>
+                        	<input type = 'hidden' name = 'formName' value = 'login'>
                             <label for="login-username-email">Email/UsuÃ¡rio</label>
-                            <input type="email" required class="txts" id="login-username-email" size="30">
+                            <input type="email" required class="txts" id="login-username-email" name = 'login-campo-email' size="30">
                             <label for="login-user-password">Senha</label>
-                            <input type="password" required class="txts" id="login-user-password" size="30">
+                            <input type="password" required class="txts" id="login-user-password" name ='login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
                         </form>
@@ -136,7 +122,7 @@
             <div class="modal-content-login">
                 <div class="modal-header">
                     <span class="closeop">&times;</span>
-                    <h3>OpÃ§Ãµes de exibiÃ§Ã£o</h3>
+                    <h3>Opções de exibição</h3>
                 </div>
                 <div class="modal-body">
                     <div class="div-c">
@@ -144,7 +130,7 @@
                             <table>
                                 <tr>
                                     <td  class="titles" colspan="2">
-                                        Ordem AlfabÃ©tica do Eventos
+                                        Ordem Alfabética do Eventos
                                     </td>
                                 </tr>
                                 <tr>
@@ -159,7 +145,7 @@
                                 </tr>
                                 <tr>
                                     <td class="titles" colspan="2">
-                                        Data Previstas Para Eventos
+                                        Data Prevista Para Eventos
                                     </td>
                                 </tr>
                                 <tr>
@@ -189,7 +175,7 @@
                                 </tr>
                                 <tr>
                                     <td class="titles" colspan="2">
-                                        Mais opÃ§Ãµes
+                                        Mais opções
                                     </td>
                                 </tr>
                                 <tr>

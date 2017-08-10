@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="pt-br">
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -13,7 +15,7 @@
                 <img src="_imagens/logo.png">
             </div>
             <div id="name-site">
-                <h1>VamoLÃ¡Ver</h1>
+                <h1>VamoLáVer</h1>
             </div>
             <div id="redes-sociais">
                 <img src="_imagens/redes-sociais.png">
@@ -79,36 +81,21 @@
             </nav>
         </div>
         <div  class="side-nav-op">
-            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">OpÃ§Ãµes de organizaÃ§Ã£o</a>
+            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">Opções de organização</a>
         </div>
         <div class="container-content">
             <article class="presentation">
                 <h1>Resultados da pesquisa</h1>
-                <div class="conteiner-result-panel">
-                    <div class="box"><!--SABEMOS QUE OS BOXES SERÃƒO IMPLEMENTADOS EM JS JÃ QUE UTILIZARÃƒO O BANCO DE DADOS-->
-                        <div class="box-informations">
-                            <pre>
-                                NOME:____________
-                                DATA:__/__/____
-                                CATEGORIA:_______
-                            </pre>
-                        </div>
-                        <div class="box-description">
-                            <pre>
-                                DESCRIÃ‡ÃƒO:____________
-                                ______________________
-                                ______________________
-                            </pre>
-                        </div>
-                        <div class="box-favorite">
-                            <button id="btn-favorite"><img alt="favorito" height="15px" width="15px" src="_imagens/star-favorite-black-png.png"></button>
-                        </div>
-                    </div>
-                </div>
+                <div id="container-link-event">
+                <div id="link-edit-this-event"></div>
+                <div id="link-favorite-or-not"></div>
+                <div id="link-name-of-this-event"> </div>
+                <div id="delete-this-event"></div>
+            </div>
             </article>
         </div>
         <footer id="rodape">
-            <p>Copyright &copy; 2017 -AndrÃ©,Lucas,Nereida,Rafael</p>
+            <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
         </footer>
         <div id="modal-login" class="modal">
             <div class="modal-content-login">
@@ -136,7 +123,7 @@
             <div class="modal-content-login">
                 <div class="modal-header">
                     <span class="closeop">&times;</span>
-                    <h3>OpÃ§Ãµes de exibiÃ§Ã£o</h3>
+                    <h3>Opções de exibição</h3>
                 </div>
                 <div class="modal-body">
                     <div class="div-c">
@@ -144,7 +131,7 @@
                             <table>
                                 <tr>
                                     <td  class="titles" colspan="2">
-                                        Ordem AlfabÃ©tica do Eventos
+                                        Ordem Alfabética do Eventos
                                     </td>
                                 </tr>
                                 <tr>
@@ -159,7 +146,7 @@
                                 </tr>
                                 <tr>
                                     <td class="titles" colspan="2">
-                                        Data Previstas Para Eventos
+                                        Data Prevista Para Eventos
                                     </td>
                                 </tr>
                                 <tr>
@@ -189,7 +176,7 @@
                                 </tr>
                                 <tr>
                                     <td class="titles" colspan="2">
-                                        Mais opÃ§Ãµes
+                                        Mais opções
                                     </td>
                                 </tr>
                                 <tr>

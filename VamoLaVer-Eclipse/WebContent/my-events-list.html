@@ -2,9 +2,11 @@
 <html lang="pt-br">
     <head>
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
-        <title>Página inicial</title>
+        <title>Lista de Eventos</title>
         <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>     
-        <link rel = "stylesheet" href="_css/style-pattern-pages-new.css"/>
+        <script type="text/javascript" src="_Javascript/notifications.js"></script>
+        <link rel = "stylesheet" href="_css/style-pages.css"/>
+        <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
     </head>
     <body class="block-principal">
         <div id="conteiner-header">
@@ -77,8 +79,16 @@
                 </ul>
             </nav>
         </div>
+        <div  class="side-nav-op">
+            <a href="#" id="btn-sidenav-options" onfocus="gomodeloptions()">Opções de organização</a>
+        </div>
         <div class="container-content">
-            
+            <div id="container-link-event">
+                <div id="link-edit-this-event"></div>
+                <div id="link-favorite-or-not"></div>
+                <div id="link-name-of-this-event"></div>
+                <div id="delete-this-event"></div>
+            </div>
         </div>
         <footer id="rodape">
             <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
@@ -99,6 +109,84 @@
                             <input type="password" required class="txts" id="login-user-password" name ='login-campo-senha' size="30">
                             <input type="submit" class="submit-b" id="btn-login-entrar" value="Entrar">
                             <a href="remember-password.html">esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+        <div id="modal-options" class="modal">
+            <div class="modal-content-login">
+                <div class="modal-header">
+                    <span class="closeop">&times;</span>
+                    <h3>Opções de exibição</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="div-c">
+                        <form id="form-options-search-result" class="form-options">
+                            <table>
+                                <tr>
+                                    <td  class="titles" colspan="2">
+                                        Ordem Alfabética do Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-oa-az">A-Z</label>
+                                        <input type="radio" id="radio-oa-az"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-oa-za">Z-A</label>
+                                        <input type="radio" id="radio-oa-za"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Data Previstas Para Eventos
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-dtpev-cres">Crescente</label>
+                                        <input type="radio" id="radio-dtpev-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-dtpev-dec">Decrescente</label>
+                                        <input type="radio" id="radio-dtpev-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Qtd. prevista de visitantes
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="radio-qtd-cre">Crescente</label>
+                                        <input type="radio" id="radio-qtd-cre"/>
+                                    </td>
+                                    <td>
+                                        <label for="radio-qtd-dec">Decrescente</label>
+                                        <input type="radio" id="radio-qtd-dec"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="titles" colspan="2">
+                                        Mais opções
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="check-only-my">Somente meus Eventos</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="check-only-my" title="Não mostrará os eventos favoritos"/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="submit" class="submit-b" id="btn-op-ok" value="OK">
+                            <input type="reset" class="reset-b" id="btn-op-eraser" value="limpar">
                         </form>
                     </div>
                 </div>
