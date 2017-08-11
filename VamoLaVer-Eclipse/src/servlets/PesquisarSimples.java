@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import bdConnect_e_DAOs.BDConnect;
+import bdConnect_e_DAOs.Evento;
 
 /**
  * Servlet implementation class PesquisarSimples
@@ -40,8 +41,8 @@ public class PesquisarSimples extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = "/result-search.jsp";
 		String nome = request.getParameter("campo-search");
-		ArrayList<String> informacoes = new ArrayList<String>();//criar um array
-		String infor = null;
+		ArrayList<Evento> informacoes = new ArrayList<Evento>();//criar um array
+		Evento objEv;
 		
 		try {
 			con = new BDConnect().setDbLink();
@@ -50,10 +51,12 @@ public class PesquisarSimples extends HttpServlet {
 			
 			while (rs.next()) {
 				if(rs.getString("evNome").contains(nome)){
-					infor = rs.getString("evNome");
+					objEv = new Evento(rs.getString("evNome"),rs.getString("evDescricao"),rs.getString("evCategoria"),
+							rs.getString("evElaboradorEmail"),rs.getString("evLocal"),rs.getInt("evPontuacao"),
+							rs.getString("evDataDeOcorrencia"),rs.getInt("evQndPrevistaDePessoas"));
+					
 					//adicionar as informações dos eventos encontrados no array
-					informacoes.add(infor);
-					//fazer um método para desconcatenar as informações do array
+					informacoes.add(aa);
 				}
 			}
 		} catch (SQLException e) {
