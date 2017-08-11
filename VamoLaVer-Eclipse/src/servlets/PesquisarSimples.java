@@ -56,7 +56,7 @@ public class PesquisarSimples extends HttpServlet {
 							rs.getString("evDataDeOcorrencia"),rs.getInt("evQndPrevistaDePessoas"));
 					
 					//adicionar as informações dos eventos encontrados no array
-					informacoes.add(aa);
+					informacoes.add(objEv);
 				}
 			}
 		} catch (SQLException e) {
