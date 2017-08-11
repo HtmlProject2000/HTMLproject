@@ -1,12 +1,12 @@
 package bdConnect_e_DAOs;
 
 
-public class evento {
+public class Evento {
 	String nome, descricao, categoria, elaborador, local,data;
 	int pontuacao;
 	int qndPrevistaPessoas;
 
-	public evento(String nome, String descricao, String categoria, String elaborador, String local, int pontuacao,
+	public Evento(String nome, String descricao, String categoria, String elaborador, String local, int pontuacao,
 			String data, int qndPrevistaPessoas) {
 		this.nome = nome;
 		this.descricao = descricao;
