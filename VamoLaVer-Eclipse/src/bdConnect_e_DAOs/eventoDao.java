@@ -34,7 +34,7 @@ public class eventoDao extends HttpServlet {
 	 *      response)
 	 */
 
-	public void inserirEvento(evento e) throws SQLException {
+	public void inserirEvento(Evento e) throws SQLException {
 		con = new BDConnect().setDbLink();
 		String sql = "insert into evento (evNome, evDescricao, evCategoria, evElaboradorEmail, evLocal, evPontuacao, evDataDeOcorrencia,   evQndPrevistaDePessoas) values(?,?,?,?,?,?,?,?);";
 		pstmt = con.prepareStatement(sql);
@@ -64,7 +64,7 @@ public class eventoDao extends HttpServlet {
 			int pontuacao = (int) request.getAttribute("evPontuacao");
 			String elaborador = (String) request.getAttribute("evElaborador");
 
-			evento e = new evento(nome, descricao, categoria, elaborador, local, pontuacao, data, qndPessoas);
+			Evento e = new Evento(nome, descricao, categoria, elaborador, local, pontuacao, data, qndPessoas);
 
 			inserirEvento(e);
 
