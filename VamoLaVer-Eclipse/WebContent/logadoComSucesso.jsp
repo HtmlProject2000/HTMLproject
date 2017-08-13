@@ -7,6 +7,8 @@
         <title>Informacão</title>
         <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>     
         <link rel = "stylesheet" href="_css/style-pattern-pages-new.css"/>
+        <link rel = "stylesheet" href="_css/style-pages.css"/>
+        <link rel = "stylesheet" href="_css/style-pattern-pages.css"/>
     </head>
     <body class="block-principal">
         <div id="conteiner-header">
@@ -93,7 +95,7 @@
             <%
               String ref = (String) request.getAttribute("voltarPara");
             %>
-            <p>Usuário logado com sucesso!</p>
+            <h2>Usuário logado com sucesso!</h2>
             <p>
                 <a href=<%=ref%>><input type='button' value='Voltar'></a>
             </p>

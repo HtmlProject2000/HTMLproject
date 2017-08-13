@@ -53,7 +53,6 @@ public class eventoDao extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO uto-generated method stub
 		try {
 			String nome = (String) request.getAttribute("evNome");
 			String local = (String) request.getAttribute("evLocal");
@@ -68,7 +67,7 @@ public class eventoDao extends HttpServlet {
 
 			inserirEvento(e);
 
-			request.getRequestDispatcher("/novoEventoAdicionado.jsp").forward(request, response);;
+			request.getRequestDispatcher("/publicacaoDao").forward(request, response);
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
