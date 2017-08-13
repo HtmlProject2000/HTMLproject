@@ -2,6 +2,7 @@
 <%@page import="bdConnect_e_DAOs.Evento"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="pt-br">
     <head>
@@ -13,9 +14,9 @@
     </head>
     <body class="block-principal">
     <% 
-    Evento objItem = new Evento(); //what???
-    ArrayList<Evento> search = (ArrayList<Evento>)request.getAttribute("informacoes");
-    objItem = search.get(0);// whtf???
+//     Evento objItem = new Evento(); //what???
+//     ArrayList<Evento> search = (ArrayList<Evento>)request.getAttribute("informacoes");
+//     objItem = search.get(0);// whtf???
     
     %>
         <div id="conteiner-header">
@@ -98,7 +99,10 @@
                     <div id="link-edit-this-event"></div>
                     <div id="link-favorite-or-not"></div>
                     <div id="link-name-of-this-event">
-                    	<h1><%=objItem.getNome()%></h1>
+                    <c:forEach items="${search}" var="search">
+    				<c:out value="${search.nome}"/><br />
+  					</c:forEach>
+<%--                     	<h1><%=objItem.getNome()%></h1> --%>
                     </div>
                     <div id="delete-this-event"></div>
                 </div>
