@@ -55,14 +55,16 @@
                         </ul>
                     </li>
                     <li>
-                        <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
-                            <div id="pesquisar">
-                                <a hrefs="search-result.html">
-                                    <img id="img-a" src="_imagens/pesquisar.png">
-                                </a>
+                        <form method="get" action="PesquisarSimples">
+                            <div class="search-box">
+                                <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
+                                <div id="pesquisar">
+                                    <button type="submit" id="submit-c">
+                                        <img id="img-a" src="_imagens/pesquisar.png">
+                                    </button>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </li>
                     <li class="only">
                         <a id="a-model-login" onclick="gomodellogin()">

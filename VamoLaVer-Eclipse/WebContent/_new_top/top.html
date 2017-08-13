@@ -57,13 +57,15 @@
                 </li>
                 <li class="navlink">
                     <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
+                        <form name="form-search-simple" method="get" action="PesquisarSimples">
+                            <input type="text" id="txt-search-box" name="campo-search" placeholder="...Buscar..." size="20px;"/>
                             <div id="pesquisar">
-                                <a href="search-result.html">
+                                <button type="submit" class="submit-c" >
                                     <img id="img-a" src="_imagens/pesquisar.png">
-                                </a>
+                                </button>
                             </div>
-                        </div>
+                        </form>
+                    </div>
                 </li>
                 <li class="only">
                         <a id="a-model-login" onclick="gomodellogin()">

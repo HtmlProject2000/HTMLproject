@@ -39,12 +39,14 @@
                             </nav>
                         </div>
                         <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="Buscar..."/>
-<!--                             <button  id="btn-search"> -->
-                                <a href="search-result.html">
-                                    <img alt="buscar" height="30px" width="30px" src="_imagens/search-icon-png.png" >
-                                </a>
-<!--                             </button> -->
+                            <form name="form-search-simple" method="get" action="PesquisarSimples">
+                                <input type="text" id="txt-search-box" name="campo-search" placeholder="...Buscar..." size="20px;"/>
+                                <div id="pesquisar">
+                                    <button type="submit" class="submit-c" >
+                                        <img id="img-a" src="_imagens/pesquisar.png">
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                         <div class="login-or-sing-in-box">
                             <a id="a-model-login" onclick="gomodellogin()">

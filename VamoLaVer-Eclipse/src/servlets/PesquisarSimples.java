@@ -39,7 +39,7 @@ public class PesquisarSimples extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "/result-search.jsp";
+		String url = "/search-result.jsp";
 		String nome = request.getParameter("campo-search");
 		ArrayList<Evento> informacoes = new ArrayList<Evento>();//criar um array
 		Evento objEv;
@@ -57,6 +57,7 @@ public class PesquisarSimples extends HttpServlet {
 					
 					//adicionar as informações dos eventos encontrados no array
 					informacoes.add(objEv);
+					request.setAttribute("search", informacoes);
 				}
 			}
 		} catch (SQLException e) {

@@ -420,6 +420,15 @@ container-content{
     cursor: pointer;
     float: right;
 }
+.submit-c{
+    background-color: #069;
+    border-radius: 5px;
+    border: none;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin-top: 0;
+}
 /*END OF BUTTON CLASSES*/
 
 footer p{

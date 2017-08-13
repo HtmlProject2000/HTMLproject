@@ -5,6 +5,10 @@ public class Evento {
 	String nome, descricao, categoria, elaborador, local,data;
 	int pontuacao;
 	int qndPrevistaPessoas;
+	
+	public Evento(){
+		
+	}
 
 	public Evento(String nome, String descricao, String categoria, String elaborador, String local, int pontuacao,
 			String data, int qndPrevistaPessoas) {

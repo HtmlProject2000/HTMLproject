@@ -66,12 +66,14 @@
                     </li>
                     <li>
                         <div class="search-box">
-                            <input type="text" id="txt-search-box" placeholder="...Buscar..." size="20px;"/>
-                            <div id="pesquisar">
-                                <a href="search-result.html">
-                                    <img id="img-a" src="_imagens/pesquisar.png">
-                                </a>
-                            </div>
+                            <form name="form-search-simple" method="get" action="PesquisarSimples">
+                                <input type="text" id="txt-search-box" name="campo-search" placeholder="...Buscar..." size="20px;"/>
+                                <div id="pesquisar">
+                                    <button type="submit" class="submit-c" >
+                                        <img id="img-a" src="_imagens/pesquisar.png">
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </li>
                     <li class="only">
