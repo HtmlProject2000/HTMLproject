@@ -74,7 +74,7 @@
 		<h1>Resultados da pesquisa</h1>
 		<%@page import='java.sql.*'%> <%
  		ResultSet rs;
- 		Statement st;
+ 	Statement st;
  	Connection con;
  	String pesquisa = request.getParameter("campo-search");
 
