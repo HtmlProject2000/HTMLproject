@@ -49,7 +49,7 @@ public class usuarioDao extends HttpServlet {
 		// TODO Auto-generated method stub
 
 		PrintWriter out = response.getWriter();
-		out.println("<h1>CHEGAMOS AO USUARIODAO</h1>");
+		out.println("<h1>Usuario cadastrado com sucesso!</h1>");
 		
 		try {
 			
@@ -63,7 +63,7 @@ public class usuarioDao extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		out.println("<h1>SUCESSO VIADO!</h1>");
+		
 		
 		
 	}

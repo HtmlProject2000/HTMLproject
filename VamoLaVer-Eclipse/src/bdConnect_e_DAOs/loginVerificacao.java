@@ -49,7 +49,7 @@ public class loginVerificacao extends HttpServlet {
 			 * "/usuarioJaLogado.jsp"; } }
 			 */
 
-											// ESQUEMA PARA "RECARREGAR AS PÁGINAS" E EXIBIR AS NOTIFICAÇOES
+											// ESQUEMA PARA "RECARREGAR AS PÃ�GINAS" E EXIBIR AS NOTIFICAÃ‡OES
 			// String lhp = "loginHomePage";
 			// String lcu = "loginContactUs";
 			// String lne = "loginNewEvent";
@@ -62,7 +62,7 @@ public class loginVerificacao extends HttpServlet {
 			// if (formName.equals(lne))
 			// url = "/new-event.html";
 
-			// switch (formName) {//NÃO SEI POR QUÊ NÃO DA CERTO
+			// switch (formName) {//NÃƒO SEI POR QUÃŠ NÃƒO DA CERTO
 			// case "loginHomePage":
 			// url = "/home-page.html";
 			// break;
@@ -77,8 +77,8 @@ public class loginVerificacao extends HttpServlet {
 			if (formName.equals("login")) {
 				if (request.getSession().getAttribute("usuarioLogado") != null) {
 					url = "/usuarioJaLogado.jsp";
-					// CONCATENA COM O PARAMETRO QUE SERÁ LIDO NO SCRIPT APÓS O
-					// CARREGAMENTO DA PÁGINA
+					// CONCATENA COM O PARAMETRO QUE SERÃ� LIDO NO SCRIPT APÃ“S O
+					// CARREGAMENTO DA PÃ�GINA
 				} else {
 
 					con = new BDConnect().setDbLink();
@@ -90,20 +90,20 @@ public class loginVerificacao extends HttpServlet {
 								&& rs.getString("usuSenha").equals(request.getParameter("login-campo-senha"))) {
 							request.getSession().setAttribute("usuarioLogado", rs.getString("usuEmail"));
 							url = "/logadoComSucesso.jsp";
-							// AQUI TAMBÉM CONCATENA O NOME DO USUÁRIO PARA SER
+							// AQUI TAMBÃ‰M CONCATENA O NOME DO USUÃ�RIO PARA SER
 							// EXIBIDO EM UMA MENSAGEM DE BEM VINDO
 							break;
 						}
 					}
 					if (request.getSession().getAttribute("usuarioLogado") == null) {
-						url = "/new-event.html?n=3";// "/loginCampoIncorreto";
+						url = "/loginCampoIncorreto.jsp";// "/loginCampoIncorreto";
 					}
 				}
 			} else {
 				if (request.getSession().getAttribute("usuarioLogado") != null) {
 					url = "/newEventVerificacao";
 				} else {
-					url += "/new-event.html?n=4";// "/loginNewEventErro.jsp";
+					url = "/loginNewEventErro.jsp";// "/loginNewEventErro.jsp";
 				}
 			}
 			request.setAttribute("voltarPara", ref);

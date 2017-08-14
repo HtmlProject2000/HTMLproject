@@ -40,7 +40,7 @@
 						<tr>
 							<td><img alt="lista" height="20px" width="20px"
 								src="_imagens/list-icon-png-black.png"></td>
-							<td><a href="my-events-list.html"
+							<td><a href="my-events-list.jsp"
 								title="Lista com seus eventos e favoritos">Listar meus
 									Eventos</a></td>
 						</tr>
@@ -48,13 +48,14 @@
 				</ul></li>
 			<li>
 				<div class="search-box">
-					<input type="text" id="txt-search-box" placeholder="...Buscar..."
-						size="20px;" />
-					<div id="pesquisar">
-						<a hrefs="search-result.html"> <img id="img-a"
-							src="_imagens/pesquisar.png">
-						</a>
-					</div>
+					<form name="form-search-simple" method="get" action="search-result.jsp">
+                                <input type="text" id="txt-search-box" name="campo-search" placeholder="...Buscar..." size="20px;"/>
+                                <div id="pesquisar">
+                                    <button type="submit" class="submit-c" >
+                                        <img id="img-a" src="_imagens/pesquisar.png">
+                                    </button>
+                                </div>
+                            </form>
 				</div>
 			</li>
 			<li class="only"><a id="a-model-login" onclick="gomodellogin()">

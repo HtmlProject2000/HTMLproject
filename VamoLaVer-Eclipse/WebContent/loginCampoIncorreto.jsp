@@ -6,7 +6,8 @@
         <meta http-equiv="content-type" content="text/html;charset=utf-8">
         <title>Informacão</title>
         <script type="text/javascript" src="_Javascript/contact-us-js.js"></script>     
-        <link rel = "stylesheet" href="_css/style-pattern-pages-new.css"/>
+        <link rel = "stylesheet" href = "_css/style-pages.css">
+        <link rel = "stylesheet" href = "_css/style-pattern-pages.css">
     </head>
     <body class="block-principal">
         <div id="conteiner-header">
@@ -82,10 +83,12 @@
             </nav>
         </div>
         <div class="container-content">
-            <p>Email ou Seha incorretos.</p>
+            <div class = "div-c">
+            <h1>Email ou Seha incorretos.</h1>
             <p>
                 <a><input type='button' value='Voltar'></a>
             </p>
+            </div>
         </div>
         <footer id="rodape">
             <p>Copyright &copy; 2017 -André,Lucas,Nereida,Rafael</p>
